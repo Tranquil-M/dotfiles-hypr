@@ -1,0 +1,39 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 0.8rem;
+}
+
+window#waybar {
+    background: @background;
+    color: @on_surface;
+}
+
+tooltip {
+  background: @background;
+  border: @on_surface;
+}
+tooltip label {
+  color: @on_surface;
+}
+
+#workspaces button:hover {
+    background: @on_tertiary;
+}
+
+#workspaces button.focused {
+    background: @on_secondary;
+    border-bottom: 3px @on_surface;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#wlr\taskbar {
+    margin: 0.2rem;
+    padding: 0.5rem 0.5rem;
+}

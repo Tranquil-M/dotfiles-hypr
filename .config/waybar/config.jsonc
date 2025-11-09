@@ -1,0 +1,100 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["wlr/taskbar", "network", "battery", "backlight", "pulseaudio"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "clock": {
+        "format":"{:%b %d  %I:%M %p}",
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "active": " ",
+            "default": " "
+        },
+        "persistent-workspaces": {
+                "*": 5, // 5 workspaces by default on every monitor
+                "HDMI-A-1": 3 // but only three on HDMI-A-1
+            }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-muted": " ",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "  ",
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "phone-muted": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " "]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+    "network": {
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 14,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+        
+        ],
+        "app_ids-mapping": {
+        "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+    "tray": {
+        "icon-size": 0.3,
+        "spacing": 10,
+        "icons": {
+            "blueman": "bluetooth",
+            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        }
+    },
+    "backlight": {
+	"device": "intel_backlight",
+	"format": "{percent}% {icon}",
+        "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "]
+    }
+}
