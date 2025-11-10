@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='eza -l'
+alias ls='eza -la'
 alias grep='grep --color=auto'
 alias pacfind="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 alias yayfind="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
@@ -17,4 +17,3 @@ nitchrevived
 eval "$(zoxide init bash)"
 alias cd='z'
 export PATH="/home/beepew/.local/bin:$PATH"
-
