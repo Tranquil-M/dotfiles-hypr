@@ -56,7 +56,7 @@ git clone https://github.com/Tranquil-M/dotfiles
 
 Due to the way GNU Stow works, cloning this repository into a hidden folder will remove Stow access to symlinks. You can make symlinks yourself, but it is significantly more difficult. 
 
-The install script's package install capability is currently only functional for Arch Based distros. The script has functionallity for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
+The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
 
 ## How does the install script work?
 
@@ -207,6 +207,8 @@ Super + Shift + 1-9
 * [GNU Stow](https://www.gnu.org/software/stow/)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Exa](https://github.com/ogham/exa)
-* [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
-* [wlogout](https://github.com/ArtsyMacaw/wlogout)
+* [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+* [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+* [Kitty](https://sw.kovidgoyal.net/kitty/)
+* [Btop](https://github.com/aristocratos/btop)
 

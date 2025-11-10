@@ -13,7 +13,6 @@ firefox
 fwupd
 fzf
 git
-glm
 hypridle
 hyprland
 hyprlock
@@ -22,14 +21,10 @@ hyprpolkitagent-git
 hyprshot
 imagemagick
 imv
-intel-ucode
 iwd
 kitty
 less
-linux
-linux-firmware
 matugen-bin
-meson
 nautilus
 neovim
 networkmanager
