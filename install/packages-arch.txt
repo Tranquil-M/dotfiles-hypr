@@ -67,7 +67,5 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xf86-input-libinput
 xsettingsd
-yay
-yay-debug
 zoxide
 zram-generator

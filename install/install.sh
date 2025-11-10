@@ -1,28 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ------------------------------------------------------------
-# Configuration
-# ------------------------------------------------------------
-REPO_URL="https://github.com/Tranquil-M/dotfiles"
-DOTFILES_DIR="$HOME/.dotfiles"
-
-# ------------------------------------------------------------
-# Clone or update dotfiles repo
-# ------------------------------------------------------------
-if [[ ! -d "$DOTFILES_DIR" ]]; then
-  echo "Cloning dotfiles repo..."
-  git clone "$REPO_URL" "$DOTFILES_DIR"
-else
-  echo "Updating existing dotfiles repo..."
-  git -C "$DOTFILES_DIR" pull --recurse-submodules
-fi
-
-cd "$DOTFILES_DIR"
-
-# ------------------------------------------------------------
 # Detect OS / package manager
-# ------------------------------------------------------------
 PKG_FILE=""
 PKG_INSTALL_CMD=""
 PKG_UPDATE_CMD=""
@@ -32,6 +11,16 @@ if command -v pacman >/dev/null 2>&1; then
   PKG_FILE="packages-arch.txt"
   PKG_INSTALL_CMD="sudo pacman -S --noconfirm --needed"
   PKG_UPDATE_CMD="sudo pacman -Syu --noconfirm"
+
+  if ! command -v yay >/dev/null 2>&1; then
+    echo "yay (AUR helper) not found — installing yay..."
+    temp_dir=$(mktemp -d)
+    git clone https://aur.archlinux.org/yay.git "$temp_dir/yay"
+    pushd "$temp_dir/yay" >/dev/null
+    makepkg -si --noconfirm
+    popd >/dev/null
+    rm -rf "$temp_dir"
+  fi
 
 elif command -v apt-get >/dev/null 2>&1; then
   echo "Detected Debian/Ubuntu-based system (apt)"
@@ -46,9 +35,7 @@ elif command -v brew >/dev/null 2>&1; then
   PKG_UPDATE_CMD="brew update"
 
 else
-  # ------------------------------------------------------------
   # Install Homebrew automatically if no other manager found
-  # ------------------------------------------------------------
   echo "No package manager detected — attempting to install Homebrew..."
 
   NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -67,9 +54,7 @@ else
   PKG_UPDATE_CMD="brew update"
 fi
 
-# ------------------------------------------------------------
 # Install packages if package list exists
-# ------------------------------------------------------------
 if [[ -f "$PKG_FILE" ]]; then
   echo "Installing packages from $PKG_FILE..."
   mapfile -t PACKAGES < "$PKG_FILE"
@@ -79,6 +64,16 @@ if [[ -f "$PKG_FILE" ]]; then
 
   for pkg in "${PACKAGES[@]}"; do
     echo "Installing: $pkg"
+
+    if command -v pacman >/dev/null 2>&1; then
+      if ! sudo pacman -S --noconfirm --needed "$pkg"; then
+        echo "$pkg not found in official repos, trying AUR..."
+        if ! yay -S --noconfirm --needed "$pkg"; then
+          echo "Package $pkg not found in AUR either — skipping."
+        fi
+      fi
+    fi
+
     if ! eval "$PKG_INSTALL_CMD $pkg"; then
       echo "Failed to install $pkg — skipping."
     fi
@@ -87,9 +82,7 @@ else
   echo "Package list $PKG_FILE not found — skipping package installation."
 fi
 
-# ------------------------------------------------------------
 # Symlink dotfiles using GNU Stow
-# ------------------------------------------------------------
 if ! command -v stow >/dev/null 2>&1; then
   echo "GNU Stow not found — please install it manually."
   exit 1
