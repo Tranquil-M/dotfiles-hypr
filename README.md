@@ -4,7 +4,7 @@ Welcome to...
 
 This is a repository of my preferred hyprland setup, which currently can only be used on arch-based distrobutions.
 
-##Installation
+## Installation
 
 1. Install the git cli tool\
 Arch Linux:\
@@ -16,11 +16,11 @@ Arch Linux:\
 3. Run the install script and let it to all the dirty work.\
 ``~/dotfiles/install/install.sh`
 
-##Please note:
+## Please note:
 
 The install script's package install capability is currently only functional for Arch Based distros. The script has functionallity for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
 
-##How does the install script work?
+## How does the install script work?
 
 You could always read it yourself, but I digress. Here's how it works:
 
@@ -32,7 +32,7 @@ You could always read it yourself, but I digress. Here's how it works:
 
 4. Prompts you to restart your system (optional).
 
-##Features
+## Features
 
 These dotfiles are meant to be basic, and fit everything that I need in my daily drive. However, there are some unique features that I would like to share!
 
@@ -47,7 +47,7 @@ Discord must be manually patched by running the command \
 `sudo Equilotl`
 * NvChad, the best NeoVim distrobution (imo)
 
-##Packages
+## Packages
 
 * [NvChad](https://nvchad.com/)
 * [Equicord](https://equicord.org/)
