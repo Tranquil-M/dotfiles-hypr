@@ -31,7 +31,7 @@ rofi_command="rofi -x11 -dmenu -show-icons true \
 
 # Generate thumbnails
 shopt -s nullglob
-for imagen in "$wall_dir"/*.{jpg,jpeg,png,webp}; do
+for imagen in "$wall_dir"/*.{jpg,jpeg,png}; do
     [ -f "$imagen" ] || continue
     nombre_archivo=$(basename "$imagen")
     out="${cacheDir}/${nombre_archivo}"
@@ -51,4 +51,3 @@ wall_selection=$(
 
 [[ -n "$wall_selection" ]] || exit 1
 matugen image "${wall_dir}/${wall_selection}"
-
