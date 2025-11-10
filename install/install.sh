@@ -97,5 +97,5 @@ for dir in $(find . -mindepth 1 -maxdepth 1 -type d \
 done
 
 echo "Dotfiles installation complete!"
-echo "You may need to restart your shell for changes to take effect."
+echo "You may need to restart your system for changes to take effect."
 
