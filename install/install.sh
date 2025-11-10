@@ -100,3 +100,19 @@ done
 echo "Dotfiles installation complete!"
 echo "You may need to restart your system for changes to take effect."
 
+while true; do
+    read -p "Do you want to reboot the system? (y/n): " answer
+    # Convert to lowercase
+    answer=${answer,,}
+
+    if [[ "$answer" == "y" ]]; then
+        echo "Rebooting now..."
+        sudo reboot
+        break
+    elif [[ "$answer" == "n" ]]; then
+        echo "Reboot canceled."
+        break
+    else
+        echo "Invalid input. Please enter 'y' or 'n'."
+    fi
+done
