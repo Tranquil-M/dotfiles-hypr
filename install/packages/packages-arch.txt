@@ -28,7 +28,7 @@ kitty
 less
 matugen-bin
 meson
-nautilus
+nemo
 neovim
 networkmanager
 nitchrevived

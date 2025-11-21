@@ -113,6 +113,7 @@ cd "$HOME"
 if command -v matugen >/dev/null 2>&1; then
     matugen -q image "Pictures/Wallpapers/White-Cat.png" >/dev/null 2>&1
 fi
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
 
 echo "Dotfiles installation complete!"
 echo "You may need to restart your system for changes to take effect."
