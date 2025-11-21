@@ -73,6 +73,5 @@ wlogout
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xf86-input-libinput
-xsettingsd
 zoxide
 zram-generator
