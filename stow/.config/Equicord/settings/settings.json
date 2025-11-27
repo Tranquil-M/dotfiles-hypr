@@ -38,7 +38,7 @@
             "enabled": true
         },
         "MessagePopoverAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessageUpdaterAPI": {
             "enabled": true
@@ -373,9 +373,6 @@
         },
         "PermissionsViewer": {
             "enabled": false
-        },
-        "petpet": {
-            "enabled": true
         },
         "PictureInPicture": {
             "enabled": false
@@ -934,7 +931,7 @@
             "enabled": false
         },
         "Quoter": {
-            "enabled": false
+            "enabled": true
         },
         "RandomVoice": {
             "enabled": false
@@ -943,9 +940,6 @@
             "enabled": false
         },
         "RemixRevived": {
-            "enabled": false
-        },
-        "RepeatMessage": {
             "enabled": false
         },
         "ReplyPingControl": {
@@ -1066,7 +1060,9 @@
             "enabled": false
         },
         "UserPFP": {
-            "enabled": false
+            "enabled": true,
+            "dbSource": "https://userpfp.github.io/UserPFP/source/data.json",
+            "preferNitro": true
         },
         "VcNarratorCustom": {
             "enabled": false
@@ -1081,7 +1077,12 @@
             "enabled": false
         },
         "VoiceButtons": {
-            "enabled": false
+            "enabled": true,
+            "showChatButton": true,
+            "showMuteButton": true,
+            "showDeafenButton": true,
+            "whichNameToShow": "both",
+            "useServer": false
         },
         "VoiceChatUtilities": {
             "enabled": false
@@ -1144,7 +1145,7 @@
             "enabled": true
         },
         "CleanUserArea": {
-            "enabled": true
+            "enabled": false
         },
         "UniversalMention": {
             "enabled": false
@@ -1161,6 +1162,28 @@
         },
         "QuickThemeSwitcher": {
             "enabled": false
+        },
+        "PetPet": {
+            "enabled": true
+        },
+        "RepeatMessages": {
+            "enabled": true
+        },
+        "BetterUserArea": {
+            "enabled": true,
+            "removeNameplate": true,
+            "removeAudioMenus": true,
+            "alwaysShowUsername": true,
+            "removeButtonTooltips": false,
+            "removeAvatarDecoration": true,
+            "removeUsernameStyles": true
+        },
+        "RichMagnetLinks": {
+            "enabled": false
+        },
+        "VoiceRejoin": {
+            "enabled": true,
+            "rejoinDelay": 2
         }
     },
     "notifications": {
@@ -1171,10 +1194,10 @@
         "logLimit": 50
     },
     "cloud": {
-        "authenticated": false,
+        "authenticated": true,
         "url": "https://cloud.equicord.org/",
-        "settingsSync": false,
-        "settingsSyncVersion": 1763100443184
+        "settingsSync": true,
+        "settingsSyncVersion": 1764017725815
     },
     "ignoreResetWarning": false,
     "userCssVars": {}
