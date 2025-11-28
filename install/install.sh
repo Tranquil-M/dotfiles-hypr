@@ -92,6 +92,10 @@ echo "Linking dotfiles using stow..."
 cd $DOTFILES_DIR
 stow --target "$HOME" "stow" --adopt
 
+echo "Creating custom NeoVim Chadwal Theme..."
+./create_nvim_config.sh
+echo "Created succesfully!"
+
 echo "Removing unneccesary dependencies..."
 if command -v pacman >/dev/null 2>&1; then
   mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
