@@ -93,7 +93,7 @@ cd $DOTFILES_DIR
 stow --target "$HOME" "stow" --adopt
 
 echo "Creating custom NeoVim Chadwal Theme..."
-./create_nvim_config.sh
+bash ./install/create_nvim_config.sh
 echo "Created succesfully!"
 
 echo "Removing unneccesary dependencies..."
