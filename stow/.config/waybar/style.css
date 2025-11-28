@@ -16,6 +16,7 @@ tooltip {
   background: @background;
   border: @on_surface;
 }
+
 tooltip label {
   color: @on_surface;
 }

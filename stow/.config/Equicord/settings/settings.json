@@ -5,7 +5,18 @@
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [
-        "OS-Theme.css"
+        "OS-Theme.css",
+        "Better SpotifyControls.theme.css",
+        "BotTag Fixer.theme.css",
+        "Channels and Roles Recolor.theme.css",
+        "EmojiReplace.theme.css",
+        "Declutter.css",
+        "RadialStatus.theme.css",
+        "RecolorAddFriendsTab.theme.css",
+        "SearchAsButton.css",
+        "Profile Color Fix.theme.css",
+        "Stage Icon Recolor.theme.css",
+        "NSFW icon recolor.theme.css"
     ],
     "enabledThemeLinks": [],
     "themeNames": {},
@@ -192,7 +203,8 @@
             "enabled": false
         },
         "FavoriteGifSearch": {
-            "enabled": true
+            "enabled": true,
+            "searchOption": "hostandpath"
         },
         "FixCodeblockGap": {
             "enabled": false
@@ -285,7 +297,7 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": true,
+            "enabled": false,
             "collapseDeleted": false,
             "deleteStyle": "text",
             "ignoreBots": false,
@@ -988,7 +1000,11 @@
             "enabled": false
         },
         "SplitLargeMessages": {
-            "enabled": false
+            "enabled": true,
+            "maxLength": 0,
+            "disableFileConversion": true,
+            "hardSplit": false,
+            "sendDelay": 1
         },
         "SpotifyActivityToggle": {
             "enabled": false
@@ -1062,7 +1078,8 @@
         "UserPFP": {
             "enabled": true,
             "dbSource": "https://userpfp.github.io/UserPFP/source/data.json",
-            "preferNitro": true
+            "preferNitro": true,
+            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json"
         },
         "VcNarratorCustom": {
             "enabled": false
@@ -1077,12 +1094,14 @@
             "enabled": false
         },
         "VoiceButtons": {
-            "enabled": true,
+            "enabled": false,
             "showChatButton": true,
             "showMuteButton": true,
             "showDeafenButton": true,
             "whichNameToShow": "both",
-            "useServer": false
+            "useServer": false,
+            "showButtonsSelf": "display",
+            "serverSelf": false
         },
         "VoiceChatUtilities": {
             "enabled": false
@@ -1183,7 +1202,17 @@
         },
         "VoiceRejoin": {
             "enabled": true,
-            "rejoinDelay": 2
+            "rejoinDelay": 2,
+            "preventReconnectIfCallEnded": "both"
+        },
+        "ExitSounds": {
+            "enabled": false
+        },
+        "GlobalNicknames": {
+            "enabled": false
+        },
+        "MessageNotifier": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1197,8 +1226,12 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1764017725815
+        "settingsSyncVersion": 1764128905851
     },
     "ignoreResetWarning": false,
-    "userCssVars": {}
+    "userCssVars": {},
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
+    }
 }
