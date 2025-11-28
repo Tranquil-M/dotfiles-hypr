@@ -33,9 +33,9 @@ post_hook = 'pkill waybar && waybar & disown'
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
 
-[templates.gtk4]
-input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-4.0/gtk.css'
+#[templates.gtk4]
+#input_path = '~/.config/matugen/templates/gtk-colors.css'
+#output_path = '~/.config/gtk-4.0/gtk.css'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'

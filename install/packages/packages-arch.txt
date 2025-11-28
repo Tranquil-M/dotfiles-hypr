@@ -28,7 +28,7 @@ iwd
 kitty
 less
 localsend-bin
-matugen-bin
+matugen
 meson
 nemo
 neovim
