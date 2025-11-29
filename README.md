@@ -114,6 +114,7 @@ sudo Equilotl
 * A minimal logout menu using wlogout
 * A firefox color theme using pywal-fox
 * A minimal login screen utilizing SilentSddm
+* An emoji picker utilizing rofi-emoji
 
 <a name="binds">
 
@@ -236,3 +237,4 @@ Super + Shift + 1-9
 * [Btop](https://github.com/aristocratos/btop)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
+* [Rofi-Emoji](https://github.com/Mange/rofi-emoji)
