@@ -5,7 +5,6 @@
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [
-        "OS-Theme.css",
         "Better SpotifyControls.theme.css",
         "BotTag Fixer.theme.css",
         "Channels and Roles Recolor.theme.css",
@@ -16,7 +15,8 @@
         "SearchAsButton.css",
         "Profile Color Fix.theme.css",
         "Stage Icon Recolor.theme.css",
-        "NSFW icon recolor.theme.css"
+        "NSFW icon recolor.theme.css",
+        "OS-Theme.css"
     ],
     "enabledThemeLinks": [],
     "themeNames": {},
@@ -28,7 +28,7 @@
     "winNativeTitleBar": false,
     "plugins": {
         "ChatInputButtonAPI": {
-            "enabled": false
+            "enabled": true
         },
         "CommandsAPI": {
             "enabled": true
@@ -58,13 +58,14 @@
             "enabled": false
         },
         "ServerListAPI": {
-            "enabled": false
+            "enabled": true
         },
         "UserSettingsAPI": {
             "enabled": true
         },
         "AccountPanelServerProfile": {
-            "enabled": false
+            "enabled": true,
+            "prioritizeServerProfile": false
         },
         "AlwaysAnimate": {
             "enabled": false
@@ -91,7 +92,8 @@
             "enabled": true
         },
         "BetterGifPicker": {
-            "enabled": true
+            "enabled": true,
+            "keepOpen": false
         },
         "BetterNotesBox": {
             "enabled": false
@@ -194,7 +196,11 @@
             "enableEmojiBypass": true,
             "transformEmojis": true,
             "transformStickers": true,
-            "transformCompoundSentence": false
+            "transformCompoundSentence": false,
+            "emojiSize": 48,
+            "hyperLinkText": "{{NAME}}",
+            "useEmojiHyperLinks": true,
+            "disableEmbedPermissionCheck": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -210,7 +216,8 @@
             "enabled": false
         },
         "FixImagesQuality": {
-            "enabled": false
+            "enabled": true,
+            "originalImagesInChat": false
         },
         "FixSpotifyEmbeds": {
             "enabled": false
@@ -288,7 +295,8 @@
             "enabled": true,
             "requireModifier": false,
             "enableDoubleClickToReply": true,
-            "enableDoubleClickToEdit": true
+            "enableDoubleClickToEdit": true,
+            "enableDeleteOnClick": true
         },
         "MessageLatency": {
             "enabled": false
@@ -297,7 +305,7 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": false,
+            "enabled": true,
             "collapseDeleted": false,
             "deleteStyle": "text",
             "ignoreBots": false,
@@ -570,16 +578,22 @@
             "enabled": false
         },
         "AllCallTimers": {
-            "enabled": false
+            "enabled": true,
+            "showWithoutHover": true,
+            "watchLargeGuilds": false,
+            "format": "stopwatch",
+            "showSeconds": true,
+            "showRoleColor": true,
+            "trackSelf": true
         },
         "AltKrispSwitch": {
             "enabled": false
         },
         "AlwaysExpandProfiles": {
-            "enabled": false
+            "enabled": true
         },
         "AmITyping": {
-            "enabled": false
+            "enabled": true
         },
         "Anammox": {
             "enabled": false
@@ -862,7 +876,25 @@
             "enabled": false
         },
         "MessageLoggerEnhanced": {
-            "enabled": false
+            "enabled": true,
+            "ShowLogsButton": true,
+            "imageCacheDir": "/home/beepew/.config/Equicord/MessageLoggerData/savedImages",
+            "logsDir": "/home/beepew/.config/Equicord/MessageLoggerData",
+            "ignoreBots": false,
+            "ignoreSelf": false,
+            "ignoreWebhooks": false,
+            "alwaysLogDirectMessages": true,
+            "alwaysLogCurrentChannel": true,
+            "whitelistedIds": "",
+            "blacklistedIds": "",
+            "ignoreMutedGuilds": false,
+            "ignoreMutedCategories": false,
+            "ignoreMutedChannels": false,
+            "cacheMessagesFromServers": false,
+            "cacheLimit": 1000,
+            "saveImages": false,
+            "messageLimit": 200,
+            "hideMessageFromMessageLoggers": false
         },
         "MessageTranslate": {
             "enabled": false
@@ -937,7 +969,52 @@
             "enabled": false
         },
         "Questify": {
-            "enabled": false
+            "enabled": true,
+            "fetchingQuestsInterval": 2700,
+            "questButtonDisplay": "always",
+            "questButtonUnclaimed": "both",
+            "disableQuestsEverything": false,
+            "disableQuestsFetchingQuests": false,
+            "unclaimedUnignoredQuests": 7,
+            "onQuestsPage": false,
+            "disableQuestsDirectMessagesTab": false,
+            "disableQuestsPopupAboveAccountPanel": true,
+            "triggerQuestsRerender": false,
+            "questButtonBadgeColor": 2842239,
+            "disableMembersListActivelyPlayingIcon": true,
+            "disableFriendsListActiveNowPromotion": true,
+            "questRewardIncludeRewardCode": true,
+            "questRewardIncludeNitroCode": true,
+            "questRewardIncludeCollectibles": true,
+            "questRewardIncludeInGame": true,
+            "questRewardIncludeOrbs": true,
+            "ignoredQuestIDs": {
+                "698978610144477266": []
+            },
+            "ignoredQuestProfile": "private",
+            "questButtonLeftClickAction": "open-quests",
+            "disableQuestsPageSponsoredBanner": false,
+            "rememberQuestPageSort": true,
+            "lastQuestPageSort": "questify",
+            "rememberQuestPageFilters": true,
+            "lastQuestPageFilters": {},
+            "reorderQuests": "UNCLAIMED, CLAIMED, IGNORED, EXPIRED",
+            "unclaimedSubsort": "Expiring ASC",
+            "claimedSubsort": "Claimed DESC",
+            "ignoredSubsort": "Recent DESC",
+            "expiredSubsort": "Expiring DESC",
+            "completeVideoQuestsInBackground": false,
+            "completeGameQuestsInBackground": false,
+            "makeMobileQuestsDesktopCompatible": true,
+            "restyleQuestsUnclaimed": 2842239,
+            "restyleQuestsClaimed": 6105983,
+            "restyleQuestsIgnored": 8334124,
+            "restyleQuestsExpired": 2368553,
+            "restyleQuestsGradient": "intense",
+            "restyleQuestsPreload": true,
+            "disableQuestsBadgeOnUserProfiles": false,
+            "fetchingQuestsAlert": "discodo",
+            "fetchingQuestsAlertVolume": 100
         },
         "QuestionMarkReplacement": {
             "enabled": false
@@ -1134,7 +1211,7 @@
             "enabled": false
         },
         "AudioPlayerAPI": {
-            "enabled": false
+            "enabled": true
         },
         "BadgeAPI": {
             "enabled": true
@@ -1148,7 +1225,8 @@
             "disableCreateDMButton": false,
             "disableDMContextMenu": false,
             "noMirroredCamera": false,
-            "removeActivitySection": false
+            "removeActivitySection": false,
+            "showYourOwnActivityButtons": false
         },
         "VCSupport": {
             "enabled": true
@@ -1161,7 +1239,93 @@
             "enabled": true
         },
         "SongLink": {
-            "enabled": true
+            "enabled": true,
+            "servicesSettings": {
+                "amazonMusic": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "spotify": {
+                    "enabled": true,
+                    "openInNative": true
+                },
+                "itunes": {
+                    "enabled": true,
+                    "openInNative": true
+                },
+                "appleMusic": {
+                    "enabled": true,
+                    "openInNative": true
+                },
+                "youtube": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "youtubeMusic": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "google": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "googleMusic": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "pandora": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "deezer": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "tidal": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "amazonStore": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "soundcloud": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "napster": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "yandex": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "spinrilla": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "audius": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "audiomack": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "anghami": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "boomplay": {
+                    "enabled": true,
+                    "openInNative": false
+                },
+                "bandcamp": {
+                    "enabled": true,
+                    "openInNative": false
+                }
+            }
         },
         "CleanUserArea": {
             "enabled": false
@@ -1213,6 +1377,33 @@
         },
         "MessageNotifier": {
             "enabled": false
+        },
+        "NoAppsAllowed": {
+            "enabled": false
+        },
+        "ScheduledMessages": {
+            "enabled": true,
+            "checkIntervalSeconds": 10,
+            "maxMessagesPerMinute": 3,
+            "showNotifications": true,
+            "showPhantomMessages": true
+        },
+        "UrlHighlighter": {
+            "enabled": true,
+            "highlightEmbeds": false,
+            "patterns": []
+        },
+        "HeaderBarAPI": {
+            "enabled": true
+        },
+        "IdleAutoRestart": {
+            "enabled": false
+        },
+        "UserAreaAPI": {
+            "enabled": false
+        },
+        "ElementHighlighter": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1226,12 +1417,14 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1764380725701
+        "settingsSyncVersion": 1766123993866
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
-    }
+    },
+    "enableOnlineThemes": true,
+    "pinnedThemes": []
 }
