@@ -561,9 +561,7 @@
             "enabled": false
         },
         "VoiceMessages": {
-            "enabled": true,
-            "echoCancellation": true,
-            "noiseSuppression": true
+            "enabled": true
         },
         "VolumeBooster": {
             "enabled": false
@@ -992,7 +990,7 @@
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
-            "triggerQuestsRerender": true,
+            "triggerQuestsRerender": false,
             "questButtonBadgeColor": 2842239,
             "disableMembersListActivelyPlayingIcon": true,
             "disableFriendsListActiveNowPromotion": true,
@@ -1441,7 +1439,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1767163430518
+        "settingsSyncVersion": 1767225201276
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
