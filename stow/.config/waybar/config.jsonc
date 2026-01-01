@@ -23,21 +23,16 @@
             "4": "4",
             "5": "5",
             "6": "6",
-            "active": " ",
-            "default": " "
+            "active": " "
         }, 
         "disable_scroll": true,
-        "all-outputs": true,
+        "all-outputs": false,
         "active_only": false,
+        "hide-active": false,
         "on_click": "activate",
         "persistent-workspaces": {
-              "1": [],
-              "2": [],
-              "3": [],
-              "4": [],
-              "5": [],
-              "6": []
-            }
+            "*": 3
+        }
     },
     "hyprland/window": {
         "format": "{}",

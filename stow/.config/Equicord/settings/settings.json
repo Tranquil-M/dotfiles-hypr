@@ -986,7 +986,7 @@
             "questButtonUnclaimed": "both",
             "disableQuestsEverything": false,
             "disableQuestsFetchingQuests": false,
-            "unclaimedUnignoredQuests": 2,
+            "unclaimedUnignoredQuests": 1,
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
@@ -1047,7 +1047,7 @@
             "enabled": false
         },
         "RPCEditor": {
-            "enabled": false
+            "enabled": true
         },
         "RPCStats": {
             "enabled": false
@@ -1439,7 +1439,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1767225201276
+        "settingsSyncVersion": 1767231498282
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
