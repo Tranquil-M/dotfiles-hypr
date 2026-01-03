@@ -1,3 +1,9 @@
-stow/.config/Equicord/equicord.asar
-stow/.config/Equicord/MessageLoggerData
-stow/Pictures/Screenshots/*
+# Ignore all files named "color" in order to keep themes default
+**/color*
+
+# Ignore everything inside the screenshots directory
+**/Screenshots/*
+
+# Ignore everything in the Equicord directory except the "themes" folder
+**/Equicord/*
+!**/Equicord/themes/tow/Pictures/Screenshots/*
