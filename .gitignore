@@ -6,4 +6,4 @@
 
 # Ignore everything in the Equicord directory except the "themes" folder
 **/Equicord/*
-!**/Equicord/themes/tow/Pictures/Screenshots/*
+!**/Equicord/themes/
