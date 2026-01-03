@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "wlr/taskbar"],
+    "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "battery", "backlight", "pulseaudio"],
+    "modules-right": ["wlr/taskbar", "network", "battery", "backlight", "pulseaudio"],
     "sway/window": {
         "max-length": 50
     },
@@ -80,16 +80,12 @@
     },
     "tray": {
         "icon-size": 0.3,
-        "spacing": 10,
-        "icons": {
-            "blueman": "bluetooth",
-            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        }
+        "spacing": 10
     },
     "backlight": {
-	    "device": "intel_backlight",
-	    "format": "{percent}% {icon}",
-      "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "]
+	      "device": "intel_backlight",
+	      "format": "{percent}% {icon}",
+        "icons": ["󰃞 ", "󰃟 ", "󰃠 "]
     },
     "custom/updates": {
       "format": "{text}",
