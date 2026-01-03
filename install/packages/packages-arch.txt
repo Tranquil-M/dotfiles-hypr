@@ -28,7 +28,7 @@ impala
 imv
 iwd
 jq
-jvol
+jvol-git
 kitty
 less
 localsend-bin

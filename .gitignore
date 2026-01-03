@@ -1,6 +1,3 @@
-# Ignore all files named "color" in order to keep themes default
-**/color*
-
 # Ignore everything inside the screenshots directory
 **/Screenshots/*
 
