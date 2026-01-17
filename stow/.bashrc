@@ -16,7 +16,7 @@ alias grep='grep --color=auto'
 alias clear="clear; nitchrevived"
 alias cd='z'
 if command -v pacman >/dev/null 2>&1; then
-	alias rmorphan="sudo pacman -Rns $(pacman -Qtdq)"
+  alias rmorphans="sudo pacman -Rns $(pacman -Qdtq)"
   alias pacfind="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
   alias yayfind="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
   alias pacrm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
