@@ -12,6 +12,7 @@ discord
 easyeffects
 efibootmgr
 equicord-installer-bin
+equicord-hook
 eza
 firefox
 fwupd
