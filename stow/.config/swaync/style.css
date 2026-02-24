@@ -142,7 +142,8 @@ trough {
   animation: slide-in 0.2s ease-out 0s 1 normal forwards;
   border: none;
   box-shadow: none;
-  border-radius: 0px;
+  border: @primary;
+  border-radius: 2px;
   background-color: @background;
   color: @on_surface;
   padding: 14px;
