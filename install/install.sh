@@ -125,6 +125,7 @@ elif command -v brew >/dev/null 2>&1; then
 fi
 
 echo "Dotfiles installation complete!"
+echo "Upon logging in again, some colors and wallpaper may look inconsistent. A simple selection of a new wallpaper will easily fix the problem."
 echo "You may need to restart your system for changes to take effect."
 
 while true; do
