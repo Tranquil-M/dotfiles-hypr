@@ -7,7 +7,7 @@
     "margin-bottom": 2,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["clock"],
-    "modules-right": ["wlr/taskbar", "network", "battery", "backlight", "pulseaudio"],
+    "modules-right": ["wlr/taskbar", "network", "battery", "backlight","pulseaudio/slider","pulseaudio"],
     "sway/window": {
         "justify": "center",
         "max-length": 50
@@ -20,7 +20,8 @@
     "clock": {
         "format":"{:%b\n%d\n\n%I\n%M}",
         "format-alt": "{:%a\n%b %d\n%H:%M}",
-        "justify": "center"
+        "justify": "center",
+        "tooltip": false
     },
     "hyprland/workspaces": {
         "justify": "center",
@@ -101,12 +102,9 @@
 	      "format": "{icon}",
         "icons": ["󰃞 ", "󰃟 ", "󰃠 "]
     },
-    "custom/updates": {
-      "justify": "center",
-      "format": "{text}",
-      "exec": "~/.config/waybar/scripts/package-updates.sh",
-      "return-type": "json",
-      "interval": 3600,
-      "on-click": "$terminal -e sudo pacman -Syu"
+    "pulseaudio/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "vertical"
     }
 }
