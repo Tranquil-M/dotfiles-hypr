@@ -100,10 +100,15 @@
         },
         "modules": [
             "custom/launcher_icon",
-            "tray"
+            "tray",
+            "custom/launcher_end_icon"
         ]
     },
     "custom/launcher_icon": {
+        "format": ":-:",
+        "tooltip": false
+    },
+    "custom/launcher_end_icon": {
         "format": ":^:",
         "tooltip": false
     },

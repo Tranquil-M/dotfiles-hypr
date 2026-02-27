@@ -54,6 +54,6 @@ tooltip label {
   transition: background 0.1s ease-in-out;
 }
 
-.drawer_open #custom-launcher_icon:hover {
+#custom-launcher_end_icon:hover {
   background: @on_tertiary;
 }
