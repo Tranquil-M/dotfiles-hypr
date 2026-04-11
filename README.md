@@ -1,204 +1,153 @@
 Welcome to...
 
-# Tranquil's Hyprland Dot Files!
+# Tranquil's Hyprland Dot Files
 
-This is a repository of my preferred hyprland setup, which is primarly used on Arch-based Distributions!
+This is a repository of my preferred Hyprland setup, primarily used on Arch-based distributions.
 
-## Table of contents:
-| Categories    | What's shown?|
-| ------------- |:-------------:|
-| [How does it look?](#looks) | Images of the actual rice! |
-| [Installation](#install) | Directions to clone and use this repository! |
-| [How does the install script work?](#walkthrough) | A brief description of the function of the install script! |
-| [Features](#feat) | A list of features included! |
-| [Bindings](#binds) | A list of bindings! |
-| [Used Packages](#pkgs) | All packages used in this repo! |
+---
 
-<a name="looks">
+## Table of Contents
 
+| Category | Description |
+|----------|------------|
+| [How does it look?](#looks) | Images of the actual rice |
+| [Installation](#install) | Directions to clone and use this repository |
+| [How does the install script work?](#walkthrough) | Explanation of the install script |
+| [Features](#feat) | Included features |
+| [Bindings](#binds) | Keybindings list |
+| [Used Packages](#pkgs) | All packages used |
+
+---
+
+<a name="looks"></a>
 ## How does it look?
 
-| Window |
-| - |
-| ![Default Color Scheme](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Window.png?raw=true) | 
+### Window
+![Default Color Scheme](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Window.png?raw=true)
 
-| Rofi |
-| - |
-| ![Application Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Rofi%206.png?raw=true) |
+### Rofi
+![Application Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Rofi%206.png?raw=true)
 
-| Wallpaper Selector |
-| - |
-| ![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Wallpaper%20Selector.png?raw=true) | 
+### Wallpaper Selector
+![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
 
-| Notification Manager |
-| - |
-| ![SwayNC](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Notification%20Center.png?raw=true) | 
+### Notification Manager
+![SwayNC](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Notification%20Center.png?raw=true)
 
-| Wlogout |
-| - |
-| ![Wlogout](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/WLogout.png?raw=true) | 
+### Wlogout
+![Wlogout](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/WLogout.png?raw=true)
 
-| Other Wallpaper Colors |
-| - |
-| ![Minecraft Purple](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Purple.png?raw=true) ![Cat Pink](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Pink.png?raw=true) ![Cat Club Green](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Green.png?raw=true) |
+### Other Wallpaper Colors
+![Minecraft Purple](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Purple.png?raw=true)
+![Cat Pink](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Pink.png?raw=true)
+![Cat Club Green](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Green.png?raw=true)
 
 > [!IMPORTANT]
 > All wallpaper colors are completely adaptive! It changes everything, all just depends on what wallpaper you are using.
 
-<a name="install">
+---
 
+<a name="install"></a>
 ## Installation
 
-1. Clone this repository into your home directory
+1. Clone this repository into your home directory:
     ```bash
-    git clone https://github.com/Tranquil-M/dotfiles .dots; cd .dots
+    git clone https://github.com/Tranquil-M/dotfiles .dots
+    cd .dots
     ```
 
-1. Run the install script and let it do all the dirty work.
+2. Run the install script:
     ```bash
     bash ./install/install.sh
     ```
 
 > [!NOTE]
-> The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself! The script will create the dotfiles for you.
+> The install script's package install capability is currently only functional for Arch-based distros.  
+> The script has logic for Debian-based distros and macOS, however package names are not included.  
+> You can manually install packages—the script will still create the dotfiles.
 
-<a name="walkthrough">
+---
 
+<a name="walkthrough"></a>
 ## How does the install script work?
 
 You could always read it yourself, but I digress. Here's how it works:
 
-1. Detects the current operating system and package manager, (includes yay on arch), and if the package manager doesn't currently exist, it installs it onto the system.
+1. Detects the current operating system and package manager (includes `yay` on Arch).  
+   If the package manager does not exist, it installs it.
 
-2. Looks for a package file in the `packages` sub directory, eg. `packages-arch.txt`, then scans the package manager's package repository for said packages. If it finds them, it installs them. In the case of arch linux, it first scans pacman, then the AUR if it can't find it.
+2. Looks for a package file in the `packages` subdirectory (e.g. `packages-arch.txt`).  
+   It scans the package repositories and installs what it finds.  
+   - On Arch: checks `pacman` first, then AUR if needed.
 
-3. Uses GNU Stow to create symlinks for each directory saved into the 'dotfiles' repository.
+3. Uses GNU Stow to create symlinks for each directory in the dotfiles repository.
 
 4. Prompts you to restart your system.
 
-<a name="feat">
+---
 
+<a name="feat"></a>
 ## Features
 
-These dotfiles are meant to be basic, and fit everything that I need in my daily drive. However, there are some unique features that I would like to share!
+These dotfiles are meant to be simple and practical for daily use, with some additional features:
 
-* A screenshot utility using Grim, Slurp, and Satty. All screenshots are automatically saved into
-```
-~/Pictures/Screenshots
-```
-* A wallpaper switcher that utilizes Matugen to change the color scheme of other applications. Wallpapers can be added easily by putting .png, .jpg, .jpeg, or .webp files into
-```
-~/Pictures/Wallpapers
-```
-* An application launcher, file exporer, ssh window, and window switcher all within Rofi.
-* A notification center/viewer utilizing SwayNC
-* A custom discord theme, utilizing Equicord. No manual patching required.
-* NvChad, the best NeoVim distrobution (imo)
-* Exa, a better list command! (love this sm)
-* Zoxide, a better cd command! (LOVE this sm)
-* An on screen display for backlight and volume, using SwayOSD
-* A clean lockscreen using hyprlock
-* A minimal logout menu using wlogout
-* A firefox color theme using pywal-fox
-* A minimal login screen utilizing SilentSddm
-* An emoji picker utilizing rofi-emoji
+- Screenshot utility using Grim, Slurp, and Satty  
+  Saves to: `~/Pictures/Screenshots`
 
-<a name="binds">
+- Wallpaper switcher using Matugen  
+  Add wallpapers to: `~/Pictures/Wallpapers`
 
+- Rofi integration:
+- Application launcher  
+- File explorer  
+- SSH window  
+- Window switcher  
+- Notification center using SwayNC  
+- Custom Discord theme using Equicord (no manual patching)  
+- NvChad (NeoVim distribution)  
+- Exa (enhanced `ls`)  
+- Zoxide (enhanced `cd`)  
+- On-screen display (volume/backlight) via SwayOSD  
+- Hyprlock lockscreen  
+- Wlogout logout menu  
+- Firefox theme using pywal-fox  
+- SilentSDDM login screen  
+- Emoji picker using rofi-emoji  
+
+---
+
+<a name="binds"></a>
 ## Bindings
 
-Here's a full list of all the custom bindings i've added, just in case you don't want to scramble around figuring them out.
+### Core
+- **Terminal** → `Super + Return`  
+- **Kill Active Window** → `Super + W`  
+- **Log Out of Hyprland** → `Super + M`  
+- **File Manager** → `Super + Shift + F`  
 
-* Terminal
-```
-Super + Return
-```
+### Window Management
+- **Toggle Floating** → `Super + T`  
+- **Toggle Split** → `Super + J`  
+- **Fake Fullscreen** → `Super + F`  
+- **Real Fullscreen** → `Super + Alt + F`  
 
-* Kill Active Window
-```
-Super + W
-```
+### UI / Tools
+- **Rofi Launcher** → `Super + Space`  
+- **Reload Waybar** → `Super + R`  
+- **Notification Center** → `Super + N`  
+- **Wlogout Menu** → `Super + Backspace`  
+- **Wallpaper Picker** → `Super + E`  
+- **Screenshot** → `Super + Z`  
 
-* Log Out of Hyprland
-```
-Super + M
-```
+### Notifications
+- **Close Latest** → `Super + Comma`  
+- **Close All** → `Super + Shift + Comma`  
 
-* File Manager
-```
-Super + Shift + F
-```
+### Workspaces
+- **Switch Workspace** → `Super + 1-9`  
+- **Move Window to Workspace** → `Super + Shift + 1-9`  
 
-* Toggle Floating Window
-```
-Super + T
-```
-
-* Open Rofi App Launcher
-```
-Super + Space
-```
-
-* Toggle Window Split
-```
-Super + J
-```
-
-* Reload Waybar
-```
-Super + R
-```
-
-* Toggle Notificaion Center
-```
-Super + N
-```
-
-* Open Wlogout
-```
-Super + Backspace
-```
-
-* "Fake" Fullscreen Active Window
-```
-Super + F
-```
-
-* "Real" Fullscreen Active Window
-```
-Super + Alt + F
-```
-
-* Wallpaper Picker
-```
-Super + E
-```
-
-* Screenshot
-```
-Super + Z
-```
-
-* Close Latest Notification
-```
-Super + Comma
-```
-
-* Close All Notifications
-```
-Super + Shift + Comma
-```
-
-* Swap Workspaces
-```
-Super + 1-9
-```
-
-* Move Window to Workspace
-```
-Super + Shift + 1-9
-```
-
+---
 <a name="pkgs">
 
 ## Packages
