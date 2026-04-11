@@ -18,7 +18,7 @@ window#osd image {
 
 window#osd image,
 window#osd label {
-  color: @primary;
+  color: @on_surface;
 }
 
 window#osd progressbar:disabled,
@@ -45,5 +45,5 @@ window#osd progress {
   min-height: inherit;
   border-radius: inherit;
   border: none;
-  background: @primary;
+  background: @on_surface;
 }
