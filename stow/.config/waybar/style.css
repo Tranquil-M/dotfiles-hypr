@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    border-radius: 2;
+    border-radius: 0;
     font-family: JetBrainsMono Nerd Font;
     min-height: 0;
     font-size: 0.8rem;
