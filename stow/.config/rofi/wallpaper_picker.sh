@@ -25,7 +25,7 @@ window {
 "
 
 
-rofi_command="rofi -x11 -dmenu -show-icons true \
+rofi_command="rofi -dmenu -show-icons true \
 -theme ${HOME}/.config/rofi/config.rasi \
 -theme-str \"${rofi_override}\""
 
