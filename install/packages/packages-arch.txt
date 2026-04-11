@@ -16,6 +16,7 @@ equicord-installer-bin
 equicord-hook
 eza
 firefox
+flatpak
 fwupd
 fzf
 git

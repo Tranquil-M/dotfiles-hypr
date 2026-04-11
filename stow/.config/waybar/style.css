@@ -12,8 +12,7 @@
 window#waybar {
     background: @background;
     color: @on_surface;
-    border: 1px solid @primary;
-    margin: 0px -50px;
+    border: 0px solid @primary;
 }
 
 tooltip {
