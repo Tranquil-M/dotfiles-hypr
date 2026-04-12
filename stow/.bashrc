@@ -13,7 +13,7 @@ eval "$(zoxide init bash)"
 # Aliases
 alias ls='eza -l'
 alias grep='grep --color=auto'
-alias clear="clear; nitchrevived"
+alias clear="clear; echo Arch Linux $(uname -r); echo User $USER of Static Hostname $(cat /etc/hostname)"
 alias cd='z'
 if command -v pacman >/dev/null 2>&1; then
   alias rmorphans="sudo pacman -Rns $(pacman -Qdtq)"
@@ -24,5 +24,5 @@ if command -v pacman >/dev/null 2>&1; then
 fi
 
 # Customizing user prompt
-PS1='\W | \u >> '
+PS1='\W > '
 clear
