@@ -52,3 +52,4 @@ wall_selection=$(
 [[ -n "$wall_selection" ]] || exit 1
 matugen image "${wall_dir}/${wall_selection}" --source-color-index 0 || matugen image "${wall_dir}/${wall_selection}"
 awww img --resize crop --transition-type center "${wall_dir}/${wall_selection}"
+cp "${wall_dir}/${wall_selection}" ~/Pictures/current_wallpaper.png
