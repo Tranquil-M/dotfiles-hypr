@@ -1,9 +1,9 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "ignore-gtk-theme": true,
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
-  "control-center-margin-top": 10,
+  "control-center-margin-top": 30,
   "control-center-margin-bottom": 10,
   "control-center-margin-right": 10,
   "notification-body-image-height": 100,
