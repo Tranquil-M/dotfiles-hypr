@@ -4,15 +4,16 @@
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font;
     min-height: 0;
-    font-size: 0.8rem;
-    padding: 0.2rem;
+    font-size: 0.9rem;
+    padding: 0.1rem;
     margin: 0.1rem;
 }
 
 window#waybar {
     background: @background;
     color: @on_surface;
-    border: 0px solid @primary;
+    border: 2px solid @primary;
+    border-radius: 10;
 }
 
 tooltip {
@@ -25,7 +26,7 @@ tooltip label {
 }
 
 #workspaces button:hover {
-    background: @on_tertiary;
+    background: @on_secondary;
 }
 
 #workspaces button.focused {
@@ -39,8 +40,8 @@ tooltip label {
 }
 
 #pulseaudio-slider trough {
-    min-height: 2rem;
-    min-width: 0.05rem;
+    min-height: 0.05rem;
+    min-width: 2rem;
     border-radius: 2px;
 }
 

@@ -22,6 +22,6 @@ if command -v pacman >/dev/null 2>&1; then
   alias yayfind="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
   alias pacrm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
 fi
-echo "Arch Linux $(uname -r); echo User $USER of Static Hostname $(cat /etc/hostname)"
+# echo "Arch Linux $(uname -r); echo User $USER of Static Hostname $(cat /etc/hostname)"
 # Customizing user prompt
 PS1='\W > '
