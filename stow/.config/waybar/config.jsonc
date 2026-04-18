@@ -15,8 +15,8 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format":"{:%b %d %I:%M}",
-        "format-alt": "{:%a%b %d%H:%M}",
+        "format":"{:%b %d, %I:%M}",
+        "format-alt": "{:%a %b %d%H:%M}",
         "justify": "center",
         "tooltip": false
     },

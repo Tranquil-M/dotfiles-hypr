@@ -12,7 +12,7 @@
 window#waybar {
     background: @background;
     color: @on_surface;
-    border: 1.5px solid @primary;
+    border: 2px solid @primary;
     border-radius: 10px;
 }
 
@@ -57,13 +57,13 @@ tooltip label {
 }
 
 #pulseaudio-slider slider {
-    min-height: 0.05rem;
-    min-width: 0.05rem;
+    min-height: 0.25rem;
+    min-width: 0.1rem;
 }
 
 #pulseaudio-slider trough {
-    min-height: 0.05rem;
-    min-width: 2rem;
+    min-height: 0.25rem;
+    min-width: 3rem;
     border-radius: 2px;
 }
 

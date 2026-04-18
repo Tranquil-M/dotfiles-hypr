@@ -62,6 +62,10 @@
           "command": "hyprlock"
         },
         {
+          "label": "󰩈",
+          "command": "hyprctl dispatch exit"
+        },
+        {
           "label": "󰆴",
           "command": "rm -r ~/Downloads/*"
         },
