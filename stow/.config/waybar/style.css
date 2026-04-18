@@ -4,7 +4,7 @@
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font;
     min-height: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0.1rem;
     margin: 0.1rem;
 }
@@ -12,8 +12,8 @@
 window#waybar {
     background: @background;
     color: @on_surface;
-    border: 2px solid @primary;
-    border-radius: 10;
+    border: 1.5px solid @primary;
+    border-radius: 10px;
 }
 
 tooltip {
@@ -25,13 +25,35 @@ tooltip label {
   color: @on_surface;
 }
 
-#workspaces button:hover {
-    background: @on_secondary;
+#workspaces {
+  background-color: transparent;
 }
 
-#workspaces button.focused {
-    background: @on_secondary;
-    border-bottom: 3px @on_surface;
+#workspaces button {
+  all: initial;
+  min-width: 0;
+  box-shadow: inset 0 -3px transparent;
+  padding: 3px 10px;
+  margin: 3px 3px;
+  border-radius: 10px;
+  background-color: @on_secondary;
+  color: @on_surface;
+}
+
+#workspaces button.active {
+  color: @background;
+  background-color: @primary;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #1e1e2e;
+  background-color: @primary;
+}
+
+#workspaces button.urgent {
+  background-color: #f38ba8;
 }
 
 #pulseaudio-slider slider {
