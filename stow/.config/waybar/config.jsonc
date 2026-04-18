@@ -6,9 +6,9 @@
     "margin-right": 6,
     "margin-top": 4,
     "margin-bottom": 4,
-    "modules-left": ["hyprland/workspaces", "group/tray"],
+    "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["clock"],
-    "modules-right": ["wlr/taskbar", "network", "battery", "backlight","pulseaudio/slider","pulseaudio"],
+    "modules-right": ["network", "battery", "backlight","pulseaudio/slider","pulseaudio"],
     "battery": {
         "justify": "center",
         "format": "{icon} {capacity}",
@@ -99,26 +99,9 @@
             "Foot Server": "Terminal"
         }
     },
-    "group/tray": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "not-hidden",
-            "click-to-reveal": true
-        },
-        "modules": [
-            "custom/launcher_icon",
-            "tray"
-        ]
-    },
-    "custom/launcher_icon": {
-        "format": "||",
-        "tooltip": false
-    },
     "tray": {
-        "justify": "center",
-        "icon-size": 0.3,
-        "spacing": 10
+        "icon-size": 13,
+        "spacing": 8
     },
     "backlight": {
         "justify": "center",

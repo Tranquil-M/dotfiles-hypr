@@ -67,7 +67,7 @@
         },
         {
           "label": "󰆴",
-          "command": "rm -r ~/Downloads/*"
+          "command": "rm -r ~/Downloads/*; notify-send 'Cleared Downloads'"
         },
         {
           "label": "󰕾",

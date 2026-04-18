@@ -71,11 +71,47 @@ tooltip label {
   padding: 0.1rem 0.2rem;
 }
 
-#network:hover,
-#pulseaudio:hover,
-#pulseaudio-slider:hover,
-#custom-launcher_icon:hover,
 #clock:hover {
-  background: @on_secondary;
+  background: @primary;
+  color: @background;
   transition: background 0.1s ease-in-out;
+  border-radius: 10;
+}
+
+#clock {
+  all: initial;
+  min-width: 0;
+  box-shadow: inset 0 -3px transparent;
+  padding: 3px 10px;
+  margin: 4px 3px;
+  border-radius: 10px;
+  background-color: @on_secondary;
+  color: @on_surface;
+}
+
+#tray {
+  background: @on_secondary;
+  border-radius: 10px;
+  margin: 5px 3px;
+  padding: 3px 3px;
+}
+
+#tray > widget {
+  margin: 3px 3px;
+  border-radius: 10px;
+  background-color: @on_secondary;
+}
+
+#tray > widget:hover {
+  background-color: @primary;
+}
+
+.modules-right {
+  min-width: 0;
+  box-shadow: inset 0 -3px transparent;
+  padding: 3px 10px;
+  margin: 6px 5px;
+  border-radius: 10px;
+  background-color: @on_secondary;
+  color: @on_surface;
 }
