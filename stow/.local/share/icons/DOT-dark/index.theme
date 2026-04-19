@@ -1,5 +1,4 @@
 [Icon Theme]
-Name=DOT-dark
-Example=arrow
-Inherits=DOT-dark
-
+Name=GoogleDot-Black
+Comment=Black cursor theme inspired on Google
+Inherits="hicolor"
