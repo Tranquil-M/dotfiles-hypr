@@ -31,7 +31,7 @@ window#osd progressbar {
   min-height: 6px;
   padding-right: 10px;
   border-radius: 10px;
-  background: @on_surface;
+  background: transparent;
   border: none;
 }
 
@@ -39,7 +39,7 @@ window#osd trough {
   min-height: inherit;
   border-radius: 10px;
   border: none;
-  background: @on_surface;
+  background: @on_secondary;
 }
 
 window#osd progress {
