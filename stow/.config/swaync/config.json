@@ -21,7 +21,7 @@
   "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
-  "text-empty": "No Notification",
+  "text-empty": "No Notifications",
   "scripts": {
     "sound-script": {
       "exec": "paplay ~/.config/swaync/notification.ogg",
@@ -31,7 +31,7 @@
   "widgets": ["title", "buttons-grid", "mpris"],
   "widget-config": {
     "title": {
-      "text": "Notification Center",
+      "text": "Control Panel",
       "clear-all-button": true,
       "button-text": "󰆴 Clear All"
     },
@@ -39,7 +39,7 @@
       "blacklist": ["playerctl"],
       "autohide": false,
       "show-album-art": "always",
-      "loop-carousel": false
+      "loop-carousel": true
     },
     "volume": {
       "label": "󰕾"

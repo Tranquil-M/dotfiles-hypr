@@ -115,6 +115,9 @@ cd ..
 rm -rf ./SilentSDDM
 sudo systemctl enable sddm.service
 
+echo "Starting Libinput Backend..."
+sudo systemctl enable --now swayosd-libinput-backend.service
+
 echo "Removing unneccesary dependencies..."
 if command -v pacman >/dev/null 2>&1; then
   sudo pywalfox install
