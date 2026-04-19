@@ -101,7 +101,7 @@ echo "Created successfully!"
 
 echo "Installing Firefox Theme..."
 cd $DOTFILES_DIR
-sh ./install/firefox_theme/install-theme.sh
+sh ./install/firefox_theme/install_theme.sh
 echo "Theme created successfully!"
 
 echo "Installing SDDM Silent Theme..."
