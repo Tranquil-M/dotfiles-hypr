@@ -1,3 +1,6 @@
+[config.custom_colors]
+my_primary = { color = "#ff0000", blend = false }
+
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
