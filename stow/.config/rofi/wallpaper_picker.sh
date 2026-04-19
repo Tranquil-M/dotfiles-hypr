@@ -1,8 +1,8 @@
 #!/bin/bash
 
-wall_dir="${HOME}/Pictures/Wallpapers"
-cacheDir="${HOME}/.cache/jp/${theme:-default}"
-mkdir -p "${cacheDir}"
+wallpaper_dir="${HOME}/Pictures/Wallpapers"
+cache_dir="${HOME}/.cache/jp/${theme:-default}"
+mkdir -p "${cache_dir}"
 
 thumb_size=50
 
@@ -24,32 +24,37 @@ window {
 }
 "
 
-
 rofi_command="rofi -dmenu -show-icons true \
 -theme ${HOME}/.config/rofi/config.rasi \
 -theme-str \"${rofi_override}\""
 
 # Generate thumbnails
 shopt -s nullglob
-for imagen in "$wall_dir"/*.{jpg,jpeg,png,webp}; do
-    [ -f "$imagen" ] || continue
-    nombre_archivo=$(basename "$imagen")
-    out="${cacheDir}/${nombre_archivo}"
-    if [ ! -f "$out" ]; then
-        convert -strip "$imagen" -thumbnail 100x100^ -gravity center -extent 100x100 "$out"
+for image in "$wallpaper_dir"/*.{jpg,jpeg,png,webp}; do
+    [ -f "$image" ] || continue
+    filename=$(basename "$image")
+    output="${cache_dir}/${filename}"
+    if [ ! -f "$output" ]; then
+        convert -strip "$image" -thumbnail 100x100^ -gravity center -extent 100x100 "$output"
     fi
 done
 
 # Feed into rofi
 wall_selection=$(
-    find "${wall_dir}" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) |
+    find "${wallpaper_dir}" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) |
     sort |
-    while read -r A; do
-        printf "%s\x00icon\x1f%s\n" "$(basename "$A")" "${cacheDir}/$(basename "$A")"
+    while read -r file; do
+        filename=$(basename "$file")
+        display_name="${filename%.*}"   # removes extension
+        printf "%s\x00icon\x1f%s\n" "$display_name" "${cache_dir}/${filename}"
     done | eval "$rofi_command"
 )
 
 [[ -n "$wall_selection" ]] || exit 1
-matugen image "${wall_dir}/${wall_selection}" --source-color-index 0 || matugen image "${wall_dir}/${wall_selection}"
-awww img --resize crop --transition-type center "${wall_dir}/${wall_selection}"
-cp "${wall_dir}/${wall_selection}" ~/Pictures/current_wallpaper.png
+
+# Reconstruct full filename (add extension back)
+selected_file=$(find "$wallpaper_dir" -maxdepth 1 -type f -name "${wall_selection}.*" | head -n 1)
+
+matugen image "$selected_file" --source-color-index 0 || matugen image "$selected_file"
+awww img --resize crop --transition-type center "$selected_file"
+cp "$selected_file" ~/Pictures/current_wallpaper.png
