@@ -259,3 +259,9 @@ picture.mpris-background {
   background-color: @border-green;
   color: @cc-bg;
 }
+
+
+.notification-group {
+    background-color: transparent;
+    outline: none;
+}
