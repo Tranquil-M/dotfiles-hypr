@@ -99,6 +99,11 @@ echo "Creating custom NeoVim Chadwal Theme..."
 bash ./install/create_nvim_config.sh
 echo "Created successfully!"
 
+echo "Installing Firefox Theme..."
+cd $DOTFILES_DIR
+sh ./install/firefox_theme/install-theme.sh
+echo "Theme created successfully!"
+
 echo "Installing SDDM Silent Theme..."
 cd ~
 git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
