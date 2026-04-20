@@ -158,7 +158,7 @@
   background: @noti-bg-darker;
   padding: 5px 10px;
   margin: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .widget-title>button {
@@ -193,7 +193,7 @@
 
 .widget-label>label {
   font-size: 1rem;
-  color: @text-color;
+  color: @primary;
   margin: 10px;
 }
 
@@ -264,4 +264,39 @@ picture.mpris-background {
 .notification-group {
     background-color: transparent;
     outline: none;
+}
+
+/* DND row: match the theme "card" look */
+.widget-dnd {
+  background: @noti-bg-darker;
+  margin: 5px 10px;
+  padding: 8px 12px;
+
+  /* match the rest of your theme borders */
+  border: 2px solid transparent;
+  border-radius: 10;
+
+  color: @blue-base;
+}
+
+/* Switch track (off) */
+.widget-dnd > switch {
+  background: @cc-bg;                 /* same as cards */
+  border: 2px solid transparent;    /* consistent border */
+  border-radius: 999px;              /* pill track */
+  box-shadow: none;
+  padding: 1px;                       /* gives the knob breathing room */
+}
+
+/* Switch track (on) */
+.widget-dnd > switch:checked {
+  background: @red-base;          /* your accent color */
+  border: 2px solid transparent;
+}
+
+/* Switch knob */
+.widget-dnd > switch slider {
+  background: @on_surface;
+  border-radius: 999px;
+  box-shadow: none;
 }

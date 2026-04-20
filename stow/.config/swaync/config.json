@@ -1,6 +1,6 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "ignore-gtk-theme": false,
+  "ignore-gtk-theme": true,
   "positionX": "center",
   "positionY": "top",
   "control-center-margin-top": 30,
@@ -25,10 +25,10 @@
   "scripts": {
     "sound-script": {
       "exec": "paplay ~/.config/swaync/notification.ogg",
-      "app-name": ".*"
+      "app-name": "notify-send"
     }
   },
-  "widgets": ["title", "buttons-grid", "mpris"],
+  "widgets": ["title", "buttons-grid", "mpris", "dnd"],
   "widget-config": {
     "title": {
       "text": "Control Panel",
@@ -46,6 +46,9 @@
     },
     "backlight": {
       "label": "󰃟"
+    },
+    "dnd": {
+      "text": "Silent Mode"
     },
     "buttons-grid": {
       "actions": [
