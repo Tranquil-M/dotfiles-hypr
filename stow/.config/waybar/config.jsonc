@@ -11,7 +11,7 @@
     "modules-right": ["network", "battery", "backlight","pulseaudio/slider","pulseaudio"],
     "battery": {
         "justify": "center",
-        "format": "{icon} {capacity}",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {

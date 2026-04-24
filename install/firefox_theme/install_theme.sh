@@ -1,7 +1,7 @@
 #!/bin/bash
 PROFILE_DIR=$(find ~/.mozilla/firefox/ -maxdepth 1 -name "*.default-release" | head -n 1)
 
-FIREFOX_DIR="$HOME/.mozilla/firefox"
+FIREFOX_DIR="$HOME/.config/mozilla/firefox"
 
 for PROFILE in "$FIREFOX_DIR"/*.default "$FIREFOX_DIR"/*.default-release; do
     if [ -d "$PROFILE" ]; then
