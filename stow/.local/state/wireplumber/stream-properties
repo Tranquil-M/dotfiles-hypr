@@ -1,5 +1,0 @@
-[stream-properties]
-Audio/Sink:application.id:com.github.wwmm.easyeffects={"channelVolumes":[1.000000, 1.000000], "volume":1.000000, "mute":false, "channelMap":["FL", "FR"]}
-Audio/Source/Virtual:application.id:com.github.wwmm.easyeffects={"channelVolumes":[1.000000, 1.000000], "volume":1.000000, "mute":false, "channelMap":["FL", "FR"]}
-Output/Audio:application.name:paplay={"volume":1.000000, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "mute":false}
-Output/Audio:application.name:Chromium={"channelVolumes":[1.000000, 1.000000], "volume":1.000000, "mute":false, "channelMap":["FL", "FR"]}
