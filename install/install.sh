@@ -86,7 +86,7 @@ xdg-mime default nemo.desktop inode/directory
 
 echo "Installing Mouse Theme..."
 cd $DOTFILES_DIR
-cp cursor/DOT-dark -r ~/.local/share/icons
+cp -r ./install/cursor/DOT-dark ~/.local/share/icons/DOT-dark
 
 # Symlink dotfiles using GNU Stow
 if ! command -v stow >/dev/null 2>&1; then
