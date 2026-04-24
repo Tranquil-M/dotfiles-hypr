@@ -10,6 +10,7 @@ calf
 cmake
 cpio
 discord
+dosfstools
 easyeffects
 efibootmgr
 equicord-installer-bin
