@@ -115,24 +115,3 @@ elif command -v brew >/dev/null 2>&1; then
   brew autoremove
   brew cleanup
 fi
-
-echo "Dotfiles installation complete!"
-echo "Upon logging in again, some colors and wallpaper may look inconsistent. A simple selection of a new wallpaper will easily fix the problem."
-echo "You may need to restart your system for changes to take effect."
-
-while true; do
-    read -p "Do you want to reboot the system? (y/n): " answer
-    answer=${answer,,}
-
-    if [[ "$answer" == "y" ]]; then
-        echo "Rebooting now..."
-        sudo reboot now
-        break
-    elif [[ "$answer" == "n" ]]; then
-        echo "Reboot canceled! Enjoy your new hyprland setup! If you have any issues, feel free to open one up on my repo."
-        break
-    else
-        echo "Invalid input. Please enter 'y' or 'n'."
-    fi
-done
-
