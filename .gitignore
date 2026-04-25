@@ -1,6 +1,0 @@
-# Ignore everything inside the screenshots directory
-**/Screenshots/*
-
-# Ignore everything in the Equicord directory except the "themes" folder
-**/Equicord/*
-!**/Equicord/themes/
