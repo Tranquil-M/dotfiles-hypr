@@ -84,6 +84,10 @@ fi
 echo "Setting defaults..."
 xdg-mime default nemo.desktop inode/directory
 
+echo "Installing Mouse Theme..."
+cd $DOTFILES_DIR
+cp -r ./install/cursor/DOT-dark ~/.local/share/icons/DOT-dark
+
 # Symlink dotfiles using GNU Stow
 if ! command -v stow >/dev/null 2>&1; then
   echo "GNU Stow not found — please install it manually."
@@ -98,11 +102,6 @@ stow --target "$HOME" "stow" --adopt
 echo "Creating custom NeoVim Chadwal Theme..."
 bash ./install/create_nvim_config.sh
 echo "Created successfully!"
-
-echo "Installing Firefox Theme..."
-cd $DOTFILES_DIR
-sh ./install/firefox_theme/install_theme.sh
-echo "Theme created successfully!"
 
 echo "Installing SDDM Silent Theme..."
 cd ~

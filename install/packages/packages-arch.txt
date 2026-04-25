@@ -4,6 +4,7 @@ awesome-terminal-fonts
 base
 base-devel
 bluez-utils
+blueman
 brightnessctl
 btop
 calf
