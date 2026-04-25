@@ -13,6 +13,7 @@ PACKAGES=(
 
 echo "Detected Arch Linux - Syncing packages..."
 
+$PKG_INSTALL_CMD base-devel
 if ! command -v yay >/dev/null 2>&1; then
   echo "yay not found — installing..."
   temp_dir=$(mktemp -d)
@@ -53,21 +54,13 @@ echo "Starting Libinput Backend..."
 sudo systemctl enable --now swayosd-libinput-backend.service
 
 echo "Removing unneccesary dependencies..."
-if command -v pacman >/dev/null 2>&1; then
-  sudo pywalfox install
-  mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
+sudo pywalfox install
+mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
 
-  if [ ${#orphans[@]} -eq 0 ]; then
-    echo "No orphaned packages to remove."
-  else
-    printf '%s\n' "${orphans[@]}" | sudo pacman -Rns -
-  fi
-
-elif command -v apt-get >/dev/null 2>&1; then
-  sudo apt autoremove --purge
-elif command -v brew >/dev/null 2>&1; then
-  brew autoremove
-  brew cleanup
+if [ ${#orphans[@]} -eq 0 ]; then
+  echo "No orphaned packages to remove."
+else
+  printf '%s\n' "${orphans[@]}" | sudo pacman -Rns -
 fi
 
 {{ end -}}
