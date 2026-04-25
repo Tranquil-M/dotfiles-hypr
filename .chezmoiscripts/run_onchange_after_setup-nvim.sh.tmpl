@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Setting up NvChad and Pywal..."
+
+if [ ! -d "$HOME/.config/nvim/.git" ]; then
+    rm -rf ~/.config/nvim
+    rm -rf ~/.local/state/nvim
+    rm -rf ~/.local/share/nvim
+    
+    git clone --depth=1 https://github.com/NvChad/starter ~/.config/nvim/
+fi
+
+# 2. Handle Pywal plugin
+if [ ! -d "$HOME/.config/nvim/pywal" ]; then
+    git clone --depth=1 https://github.com/NvChad/pywal ~/.config/nvim/pywal
+fi
+
+# 3. Append configuration only if it's not already there
+# We use a heredoc for readability
+INIT_LUA="$HOME/.config/nvim/init.lua"
+
+if ! grep -q "chadwal.py" "$INIT_LUA"; then
+    cat <<EOF >> "$INIT_LUA"
+
+-- Added by chezmoi
+os.execute("python ~/.config/nvim/pywal/chadwal.py &> /dev/null &")
+
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("Signal", {
+  pattern = "SIGUSR1",
+  callback = function()
+    require('nvchad.utils').reload()
+  end
+})
+EOF
+fi
+
+echo "NvChad setup complete!"
+
