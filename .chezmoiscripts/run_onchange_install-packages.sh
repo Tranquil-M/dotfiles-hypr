@@ -10,7 +10,7 @@ DOTFILES_DIR=$SCRIPT_DIR/..
 
 if command -v pacman >/dev/null 2>&1; then
   echo "Detected Arch-based system (pacman)"
-  PKG_FILE="$SCRIPT_DIR/packages/packages-arch.txt"
+  PKG_FILE="$SCRIPT_DIR/packages-arch.txt"
   PKG_INSTALL_CMD="sudo pacman -S --noconfirm --needed"
   PKG_UPDATE_CMD="sudo pacman -Syu --noconfirm"
 
