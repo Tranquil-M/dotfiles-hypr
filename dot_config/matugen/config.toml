@@ -24,9 +24,10 @@ post_hook = 'pkill waybar && waybar & disown'
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
 
-#[templates.gtk4]
-#input_path = '~/.config/matugen/templates/gtk-colors.css'
-#output_path = '~/.config/gtk-4.0/gtk.css'
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+post_hook = 'pkill -9 nautilus'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'
@@ -51,23 +52,14 @@ post_hook = 'pywalfox update'
 input_path = '~/.config/matugen/templates/midnight-discord.css'
 output_path = '~/.config/Equicord/themes/OS-Theme.css'
 
-#Matugen/Pywal color configuration. Using https://github.com/nvchad/pywal docs
-[templates.nvim]
-input_path = '~/.config/nvim/pywal/matugen.lua'
-output_path = '~/.cache/wal/base46-dark.lua'
-
-[templates.nvimlight]
-input_path = '~/.config/nvim/pywal/matugen.lua'
-output_path = '~/.cache/wal/base46-light.lua'
-
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 post_hook = 'pkill -USR2 btop || true'
 
-[templates.pywal]
-input_path = '~/.config/nvim/pywal/waltemplate'
-output_path = '~/.cache/wal/colors'
+[templates.nvim]
+input_path = '~/.config/matugen/templates/template.lua'
+output_path = '~/.config/nvim/matugen.lua'
 
 [config.custom_colors.red]
 color = "#FF0000"

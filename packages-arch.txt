@@ -42,7 +42,7 @@ localsend-bin
 lsp-plugins
 matugen
 meson
-nemo
+nautilus
 neovim
 networkmanager
 nitchrevived
