@@ -1,24 +1,27 @@
 {
     "layer": "bottom",
     "height": 25,
-    "position": "top",
-    "margin-left": 6,
-    "margin-right": 6,
-    "margin-top": 4,
-    "margin-bottom": 4,
-    "modules-left": ["hyprland/workspaces", "tray"],
-    "modules-center": ["clock"],
-    "modules-right": ["network", "battery", "backlight","pulseaudio/slider","pulseaudio"],
+    "position": "bottom",
+    "margin-left": 0,
+    "margin-right": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["wlr/taskbar"],
+    "modules-right": ["tray", "network", "battery", "backlight", "pulseaudio", "clock"],
     "battery": {
-        "justify": "center",
-        "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format": "<span font='16pt'>{icon}</span>",
+        "format-icons": [" ", " ", " ", " ", "  "],
+        "tooltip": true,
+        "tooltip-format": "󱐋 {capacity}% battery\n{time} until depleted",
+        "format-time": "{H}h {M}m",
     },
     "clock": {
-        "format":"{:%b %d, %I:%M}",
+        "format":"{:%I:%M}",
         "format-alt": "{:%a %b %d, %H:%M}",
         "justify": "center",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "<big>{:%A %d, %B %Y}</big>"
     },
     "hyprland/workspaces": {
         "justify": "center",
@@ -47,13 +50,15 @@
     "hyprland/window": {
         "justify": "center",
         "format": "{}",
-        "separate-outputs": true
+        "icon": true,
+        "icon-size": 16,
+        "separate-outputs": true,
+        "max-length": 30,
     },
     "pulseaudio": {
-        "justify": "center",
-        "format": "{icon}",
-        "format-bluetooth": "{icon}",
-        "format-muted": " ",
+        "format": "<span font='16pt'>{icon}</span>",
+        "format-bluetooth": "<span font='16pt'>{icon}</span>",
+        "format-muted": "<span font='16pt'></span>",
         "format-icons": {
             "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
             "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "  ",
@@ -64,18 +69,20 @@
             "phone-muted": " ",
             "portable": " ",
             "car": " ",
-            "default": [" ", "  "]
+            "default": [" ", " "]
         },
         "scroll-step": 1,
         "on-click": "kitty -e jvol",
-        "ignored-sinks": ["Easy Effects Sink"]
+        "ignored-sinks": ["Easy Effects Sink"],
+        "tooltip": true,
+        "tooltip-format": "{volume}%\n{icon} {desc}",
     },
     "network": {
         "justify": "center",
-        "format": "{icon}", 
+        "format": "<span font='16pt'>{icon}</span>", 
         "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
-        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-        "format-disconnected": "󰤭 ", 
+        "format-ethernet": "<span font='16pt'>{ipaddr}/{cidr} 󰊗</span>",
+        "format-disconnected": "<span font='16pt'>󰤭</span>", 
         "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}\nSSID: {essid}\nSignalStrength: {signalStrength}%",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
@@ -84,7 +91,7 @@
     "wlr/taskbar": {
         "justify": "center",
         "format": "{icon}",
-        "icon-size": 14,
+        "icon-size": 25,
         "icon-theme": "Numix-Circle",
         "tooltip-format": "{title}",
         "on-click": "activate",
@@ -101,12 +108,13 @@
     },
     "tray": {
         "icon-size": 13,
-        "spacing": 8
+        "spacing": 4
     },
     "backlight": {
-        "justify": "center",
-	      "format": "{icon} {percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"]
+	    "format": "<span font='16pt'>{icon}</span>",
+        "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "],
+        "tooltip": true,
+        "tooltip-format": "{icon} {percent}% brightness",
     },
     "pulseaudio/slider": {
       "min": 0,
