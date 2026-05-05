@@ -13,7 +13,9 @@
         "format": "<span font='16pt'>{icon}</span>",
         "format-icons": [" ", " ", " ", " ", "  "],
         "tooltip": true,
-        "tooltip-format": "󱐋 {capacity}% battery\n{time} until depleted",
+        "tooltip-format-discharging": "󱐋 {capacity}% battery\n{time} until depleted",
+        "tooltip-format-charging": "󱐋 {capacity}% battery\n{time} until full",
+        "tooltip-format-plugged": "󱐋 {capacity}%; plugged",
         "format-time": "{H}h {M}m",
     },
     "clock": {
