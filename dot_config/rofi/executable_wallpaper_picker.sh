@@ -55,6 +55,6 @@ wall_selection=$(
 # Reconstruct full filename (add extension back)
 selected_file=$(find "$wallpaper_dir" -maxdepth 1 -type f -name "${wall_selection}.*" | head -n 1)
 
-matugen image "$selected_file" --source-color-index 0 || matugen image "$selected_file"
+matugen image "$selected_file" --source-color-index 0 --fallback-color "#FFFFFF" || matugen image "$selected_file" --fallback-color "#FFFFFF"
 awww img --resize crop --transition-type center "$selected_file"
 cp "$selected_file" ~/Pictures/current_wallpaper.png
