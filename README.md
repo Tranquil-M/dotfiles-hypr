@@ -50,39 +50,28 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 <a name="install"></a>
 ## Installation
 
-1. Clone this repository into your home directory:
+1. Install chezmoi
     ```bash
-    git clone https://github.com/Tranquil-M/dotfiles .dots
-    cd .dots
+    sudo pacman -Sy chezmoi
     ```
 
-2. Run the install script:
-    ```bash
-    bash ./install/install.sh
-    ```
+2. Initialize and apply this repository:
+   ```bash
+   chezmoi init --apply Tranquil-M
+   ```
 
 > [!NOTE]
-> The install script's package install capability is currently only functional for Arch-based distros.  
-> The script has logic for Debian-based distros and macOS, however package names are not included.  
-> You can manually install packages—the script will still create the dotfiles.
+> The install script's package install capability is currently only functional for Arch-based distros.
 
 ---
 
 <a name="walkthrough"></a>
 ## How does the install script work?
 
-You could always read it yourself, but I digress. Here's how it works:
-
-1. Detects the current operating system and package manager (includes `yay` on Arch).  
-   If the package manager does not exist, it installs it.
-
-2. Looks for a package file in the `packages` subdirectory (e.g. `packages-arch.txt`).  
-   It scans the package repositories and installs what it finds.  
-   - On Arch: checks `pacman` first, then AUR if needed.
-
-3. Uses GNU Stow to create symlinks for each directory in the dotfiles repository.
-
-4. Prompts you to restart your system.
+1. Uses Chezmoi to run package installation scripts, looking for a file named `packages-arch.txt` in `~/.local/share/chezmoi`. Multi-OS support is planned in the future.
+2. If a package cannot be found in official repositories, it installs [yay](https://github.com/jguer/yay) and scans the AUR.
+3. Sets default applications and colors.
+4. Updates the system, and prompts you to restart.
 
 ---
 
@@ -93,26 +82,24 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 - Screenshot utility using Grim, Slurp, and Satty  
   Saves to: `~/Pictures/Screenshots`
-
 - Wallpaper switcher using Matugen  
-  Add wallpapers to: `~/Pictures/Wallpapers`
-
+  Add wallpapers to: `~/Pictures/Wallpapers`; It can be any standard image filetype.
 - Rofi integration:
-- Application launcher  
-- File explorer  
-- SSH window  
-- Window switcher  
-- Notification center using SwayNC  
-- Custom Discord theme using Equicord (no manual patching)  
-- NvChad (NeoVim distribution)  
+    - Application launcher  
+    - File explorer  
+    - SSH window  
+    - Window switcher  
+    - Notification center using SwayNC
+    - Emoji picker
+- Custom Discord theme using Equibop (Discord Client)
+- Kickstart Nvim configuration
 - Exa (enhanced `ls`)  
 - Zoxide (enhanced `cd`)  
-- On-screen display (volume/backlight) via SwayOSD  
+- On-screen display (volume/backlight/capslock indicator) via SwayOSD  
 - Hyprlock lockscreen  
 - Wlogout logout menu  
-- Firefox theme using pywal-fox  
-- SilentSDDM login screen  
-- Emoji picker using rofi-emoji  
+- Firefox theme using pywal-fox and custom css  
+- SilentSDDM login screen
 
 ---
 
@@ -138,6 +125,7 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 - **Wlogout Menu** → `Super + Backspace`  
 - **Wallpaper Picker** → `Super + E`  
 - **Screenshot** → `Super + Z`  
+- **Always On Top Waybar Toggle** `Super + A`
 
 ### Notifications
 - **Close Latest** → `Super + Comma`  
@@ -145,16 +133,18 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 ### Workspaces
 - **Switch Workspace** → `Super + 1-9`  
-- **Move Window to Workspace** → `Super + Shift + 1-9`  
+- **Move Window to Workspace** → `Super + Shift + 1-9`
+
+>[!NOTE]
+>Temporary workspaces are supported, but a minimum of 3 persistent workspaces are assigned per-monitor on startup.
 
 ---
 <a name="pkgs">
 
 ## Packages
 
-* [NvChad](https://nvchad.com/)
-* [NvChad Pywal Support](https://github.com/nvchad/pywal)
-* [Equicord](https://equicord.org/)
+* [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
+* [Equibop](https://equicord.org/)
 * [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 * [SwayOSD](https://github.com/ErikReider/SwayOSD)
 * [Rofi](https://github.com/davatorium/rofi)
@@ -164,7 +154,7 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Satty](https://github.com/Satty-org/Satty)
 * [Grim](https://github.com/emersion/grim)
 * [Slurp](https://github.com/emersion/slurp)
-* [GNU Stow](https://www.gnu.org/software/stow/)
+* [Chezmoi](https://www.chezmoi.io/)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Exa](https://github.com/ogham/exa)
 * [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
@@ -174,3 +164,4 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
 * [Rofi-Emoji](https://github.com/Mange/rofi-emoji)
+* [Little Fox](https://github.com/biglavis/LittleFox)
