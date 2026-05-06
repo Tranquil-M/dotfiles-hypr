@@ -11,12 +11,10 @@ calf
 chezmoi
 cmake
 cpio
-discord
 dosfstools
 easyeffects
 efibootmgr
-equicord-installer-bin
-equicord-hook
+equibop
 eza
 firefox
 flatpak
