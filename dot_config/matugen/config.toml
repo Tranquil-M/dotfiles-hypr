@@ -51,7 +51,7 @@ post_hook = 'pywalfox update'
 
 [templates.equicord]
 input_path = '~/.config/matugen/templates/midnight-discord.css'
-output_path = '~/.config/Equicord/themes/OS-Theme.css'
+output_path = '~/.config/equibop/themes/OS-Theme.css'
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
