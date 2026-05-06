@@ -52,6 +52,7 @@ nwg-look
 otf-font-awesome
 pacman-contrib
 pipewire-pulse
+pavucontrol
 polkit-kde-agent
 powerline
 powerline-fonts
