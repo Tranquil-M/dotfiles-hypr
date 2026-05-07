@@ -14,6 +14,10 @@
 
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
+* {
+  font-family: "JetBrainsMono NFM", "JetBrains Mono", monospace !important;
+}
+
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
