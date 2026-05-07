@@ -1,6 +1,6 @@
 [config.custom_colors]
 my_primary = { color = "#ff0000", blend = false }
-fallback_color = "#FFFFFF"
+fallback_color = "#FFFFFF" # default fallback to white
 
 [templates.snappy]
 input_path = '~/.config/matugen/templates/snappy.ini'

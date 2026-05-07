@@ -1,3 +1,5 @@
+# -- CURRENTLY A WIP --
+
 #!/usr/bin/env bash
 if rfkill list | grep -q "Soft blocked: yes"; then
   rfkill unblock all
