@@ -104,7 +104,6 @@
   background: @noti-bg-darker;
   color: @text-color;
   caret-color: @text-color;
-  box-shadow: 0 0 0 1px @noti-border-color;
 }
 
 .inline-reply-button {
@@ -112,7 +111,6 @@
   margin-left: 4px;
   background: @noti-bg;
   color: @text-color;
-  box-shadow: 0 0 0 1px @noti-border-color;
 }
 
 .inline-reply-button:disabled {
