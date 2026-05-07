@@ -9,7 +9,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,ssh,window,emoji";
+	modi:                       "drun,ssh,emoji";
   show-icons:                 true;
   icon-theme: 		"hicolor";
   display-drun:               "  Apps";

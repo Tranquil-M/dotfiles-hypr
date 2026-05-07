@@ -2,6 +2,11 @@
 my_primary = { color = "#ff0000", blend = false }
 fallback_color = "#FFFFFF"
 
+[templates.snappy]
+input_path = '~/.config/matugen/templates/snappy.ini'
+output_path = '~/.config/snappy-switcher/themes/custom.ini'
+post_hook = 'pkill -9 snappy-switcher; snappy-switcher --daemon & disown'
+
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
