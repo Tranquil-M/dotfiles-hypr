@@ -31,6 +31,9 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 ### Wallpaper Selector
 ![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
 
+### Tab Switcher
+![Tab Switcher](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Tab%20Switcher.png?raw=true)
+
 ### Notification Manager
 ![SwayNC](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Notification%20Center.png?raw=true)
 
@@ -86,11 +89,10 @@ These dotfiles are meant to be simple and practical for daily use, with some add
   Add wallpapers to: `~/Pictures/Wallpapers`; It can be any standard image filetype.
 - Rofi integration:
     - Application launcher  
-    - File explorer  
-    - SSH window  
-    - Window switcher  
-    - Notification center using SwayNC
+    - SSH window
     - Emoji picker
+- Control Panel using SwayNC
+- Tab Switcher
 - Custom Discord theme using Equibop (Discord Client)
 - Kickstart Nvim configuration
 - Exa (enhanced `ls`)  
@@ -143,25 +145,26 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 ## Packages
 
-* [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
+* [Btop](https://github.com/aristocratos/btop)
+* [Chezmoi](https://www.chezmoi.io/)
 * [Equibop](https://equicord.org/)
-* [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
-* [SwayOSD](https://github.com/ErikReider/SwayOSD)
-* [Rofi](https://github.com/davatorium/rofi)
-* [Rofi Theme](https://github.com/newmanls/rofi-themes-collection)
+* [Exa](https://github.com/ogham/exa)
+* [Grim](https://github.com/emersion/grim)
+* [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+* [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
+* [Kitty](https://sw.kovidgoyal.net/kitty/)
+* [Little Fox](https://github.com/biglavis/LittleFox)
 * [Matugen](https://github.com/InioX/matugen)
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
-* [Satty](https://github.com/Satty-org/Satty)
-* [Grim](https://github.com/emersion/grim)
-* [Slurp](https://github.com/emersion/slurp)
-* [Chezmoi](https://www.chezmoi.io/)
-* [Zoxide](https://github.com/ajeetdsouza/zoxide)
-* [Exa](https://github.com/ogham/exa)
-* [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
-* [Wlogout](https://github.com/ArtsyMacaw/wlogout)
-* [Kitty](https://sw.kovidgoyal.net/kitty/)
-* [Btop](https://github.com/aristocratos/btop)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-* [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
+* [Rofi](https://github.com/davatorium/rofi)
+* [Rofi Theme](https://github.com/newmanls/rofi-themes-collection)
 * [Rofi-Emoji](https://github.com/Mange/rofi-emoji)
-* [Little Fox](https://github.com/biglavis/LittleFox)
+* [Satty](https://github.com/Satty-org/Satty)
+* [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
+* [Slurp](https://github.com/emersion/slurp)
+* [Snappy Switcher](https://github.com/OpalAayan/snappy-switcher)
+* [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
+* [SwayOSD](https://github.com/ErikReider/SwayOSD)
+* [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+* [Zoxide](https://github.com/ajeetdsouza/zoxide)
