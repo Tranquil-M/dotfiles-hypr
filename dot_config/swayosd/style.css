@@ -1,16 +1,14 @@
 @import "colors.css";
 
 window#osd {
-  border-radius: 10px;
-  background: @background;
-  border: 2px solid @primary;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  background: transparent;
 }
 
 window#osd #container {
-  margin: 6px;
-  padding: 2px;
-  background: transparent;
+  margin: 12px;
+  padding: 12px;
+  background: @background;
+  box-shadow: 0 0 5px 0px rgba(0,0,0,0.9);
 }
 
 window#osd image {
@@ -30,21 +28,21 @@ window#osd image:disabled {
 window#osd progressbar {
   min-height: 6px;
   padding-right: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   background: transparent;
   border: none;
 }
 
 window#osd trough {
   min-height: inherit;
-  border-radius: 10px;
+  border-radius: 0px;
   border: none;
   background: @on_secondary;
 }
 
 window#osd progress {
   min-height: inherit;
-  border-radius: 10px;
+  border-radius: 0px;
   border: none;
   background: @primary;
 }
