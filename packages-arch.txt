@@ -87,6 +87,7 @@ ttf-symbola
 udisks2
 unzip
 waybar
+webapp-manager
 wlogout
 wtype
 xdg-desktop-portal-gtk
