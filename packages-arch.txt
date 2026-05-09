@@ -68,6 +68,7 @@ rofi
 rofi-emoji
 satty
 sddm
+snappy-switcher
 swaync
 swayosd
 swww
