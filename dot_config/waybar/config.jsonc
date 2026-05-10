@@ -10,7 +10,7 @@
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["tray", "network", "battery", "backlight", "pulseaudio", "clock"],
     "battery": {
-        "format": "<span font='16'>{icon}</span>",
+        "format": "{icon}",
         "format-icons": ["", "", "", "", ""],
         "tooltip": true,
         "tooltip-format-discharging": "󱐋 {capacity}% battery\n{time} until depleted\ndischarging",
@@ -23,7 +23,7 @@
         "format-alt": "{:%a %b %d, %H:%M}",
         "justify": "center",
         "tooltip": true,
-        "tooltip-format": "<big>{:%A %d, %B %Y}</big>"
+        "tooltip-format": "{:%A %d, %B %Y}"
     },
     "hyprland/workspaces": {
         "justify": "center",
@@ -58,9 +58,9 @@
         "max-length": 30,
     },
     "pulseaudio": {
-        "format": "<span font='16'>{icon}</span>",
-        "format-bluetooth": "<span font='16'>{icon}</span>",
-        "format-muted": "<span font='16'></span>",
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
+        "format-muted": "",
         "format-icons": {
             "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
             "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "  ",
@@ -81,10 +81,10 @@
     },
     "network": {
         "justify": "center",
-        "format": "<span font='16'>{icon}</span>", 
+        "format": "{icon}", 
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-        "format-ethernet": "<span font='16'>{ipaddr}/{cidr} 󰊗</span>",
-        "format-disconnected": "<span font='16'>󰤭</span>", 
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "󰤭", 
         "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}\nSSID: {essid}\nSignalStrength: {signalStrength}%",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
@@ -113,7 +113,7 @@
         "spacing": 4
     },
     "backlight": {
-	    "format": "<span font='16'>{icon}</span>",
+	    "format": "{icon}",
         "format-icons": ["󰃞", "󰃟", "󰃠"],
         "tooltip": true,
         "tooltip-format": "{icon} {percent}% brightness",
