@@ -4,9 +4,13 @@
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font;
     min-height: 0;
-    font-size: 0.8rem;
-    padding: 0.1rem 0.1rem;
-    margin: 0.1rem 0.2rem;
+    font-size: 14px;
+    padding: 1px 1px;
+    margin: 1px 2px;
+}
+
+label {
+  min-height: 0;
 }
 
 window#waybar {
@@ -14,6 +18,7 @@ window#waybar {
     color: @on_surface;
     border: 0px solid @primary;
     border-radius: 0px;
+  min-height: 0;
 }
 
 tooltip {
@@ -27,6 +32,7 @@ tooltip label {
 
 #workspaces {
   background-color: transparent;
+  min-height: 0;
 }
 
 #workspaces button {
@@ -38,6 +44,7 @@ tooltip label {
   border-radius: 0px;
   background-color: @on_secondary;
   color: @on_surface;
+  font-size: 14px
 }
 
 #workspaces button.active {
@@ -76,6 +83,8 @@ tooltip label {
   margin-left: 2px;
   border-radius: 0px;
   color: @on_surface;
+  font-size: 14px;
+  min-height: 0;
 }
 
 #tray {
@@ -83,6 +92,7 @@ tooltip label {
   border-radius: 0px;
   margin: 5px 3px;
   padding: 3px 3px;
+  min-height: 0;
 }
 
 #tray > widget {
@@ -117,6 +127,8 @@ tooltip label {
   padding-right: 5px;
   border-radius: 0px;
   color: @on_surface;
+  font-size: 16px;
+  min-height: 0;
 }
 
 #taskbar button.active {
