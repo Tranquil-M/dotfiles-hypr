@@ -21,14 +21,19 @@ for PROFILE in "$FIREFOX_DIR"/*; do
         fi
 
         WEBSITE_DIR="$CHROME_DIR/websites"
-        if [[ -d "$TEMPLATE_DIR" ]]; then
-            mkdir -p "$WEBSITE_DIR"
+        if [[ -d "$TEMPLATE_DIR" ]]; then 
+            if [[ -d "$WEBSITE_DIR" ]]; then
+                rm -rf "$WEBSITE_DIR"/*
+            else
+                mkdir -p "$WEBSITE_DIR"
+            fi
+        
             cp -a "$TEMPLATE_DIR/." "$WEBSITE_DIR/"
         else
             echo "Template directory not found at $TEMPLATE_DIR"
             continue
         fi
-
+        
         USER_CONTENT_FILE="$CHROME_DIR/userContent.css"
         > "$USER_CONTENT_FILE"
 
