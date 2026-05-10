@@ -68,6 +68,11 @@ input_path = '~/.config/matugen/templates/nvim.json'
 output_path = '~/.config/nvim/matugen.json'
 post_hook = 'pkill -SIGUSR1 nvim'
 
+[templates.firefox-website-colors]
+input_path = "~/.config/matugen/templates/firefox-colors.css"
+output_path = "~/.mozilla/firefox/colors.css"
+post_hook = 'sh ~/.config/matugen/scripts/install_website_colors.sh; pkill firefox'
+
 [config.custom_colors.red]
 color = "#FF0000"
 blend = true
