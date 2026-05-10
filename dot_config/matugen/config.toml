@@ -64,8 +64,9 @@ output_path = '~/.config/btop/themes/matugen.theme'
 post_hook = 'pkill -USR2 btop || true'
 
 [templates.nvim]
-input_path = '~/.config/matugen/templates/template.lua'
-output_path = '~/.config/nvim/matugen.lua'
+input_path = '~/.config/matugen/templates/nvim.json'
+output_path = '~/.config/nvim/matugen.json'
+post_hook = 'pkill -SIGUSR1 nvim'
 
 [config.custom_colors.red]
 color = "#FF0000"

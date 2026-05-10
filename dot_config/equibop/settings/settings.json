@@ -1906,6 +1906,9 @@
         },
         "VoiceStats": {
             "enabled": false
+        },
+        "Streaks": {
+            "enabled": false
         }
     },
     "uiElements": {
@@ -1923,7 +1926,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1778305355373
+        "settingsSyncVersion": 1778375778992
     },
     "ignoreResetWarning": false,
     "userCssVars": {}

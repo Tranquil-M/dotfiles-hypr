@@ -7,6 +7,8 @@ while true; do
     # check if battery is below 20%
     if [ "$STATUS" == "Discharging" ] && [ "$CAPACITY" -le 20 ]; then
         notify-send -u critical "Battery Low" "Battery is at ${CAPACITY}%! CHARGE YOUR COMPUTER NOW!!"
+    elif [ "$STATUS" == "Plugged" ] || [ "$CAPACITY" -ge 85 ]; then
+        notify-send -u critical "Battery is at ${CAPACITY}%! You can probably unplug your computer now.."
     fi
     sleep 30
     # loop every 30 seconds until you charge your laptop (GET ON WITH IT)
