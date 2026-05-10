@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Ghost Suggestions
+source ~/.ghost.sh
+
 # SSH config
 eval $(ssh-agent -s)
 
@@ -8,7 +11,7 @@ eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
 clear
 
-# Initializing zoxide
+# Initializing applications
 eval "$(zoxide init bash)"
 
 # Aliases
