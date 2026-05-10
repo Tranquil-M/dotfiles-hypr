@@ -73,6 +73,7 @@ swaync
 swayosd
 swww
 tree
+tree-sitter-cli
 ttf-0xproto-nerd
 ttf-cascadia-mono-nerd
 ttf-dejavu
