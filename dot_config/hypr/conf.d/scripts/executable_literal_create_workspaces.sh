@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # edit this if you have a different monitors config
-HYPRLAND_CONFIG="$HOME/.config/hypr/conf.d/monitors.conf"
+HYPRLAND_CONFIG="$HOME/.config/hypr/conf.d/workspaces.conf"
 
 WORKSPACES_PER_MONITOR=3
 declare -A MONITOR_WORKSPACES
