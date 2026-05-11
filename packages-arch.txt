@@ -39,6 +39,7 @@ less
 localsend-bin
 lsp-plugins
 matugen
+markdownlint
 meson
 nautilus
 neovim
