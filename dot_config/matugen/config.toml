@@ -5,7 +5,7 @@ fallback_color = "#FFFFFF" # default fallback to white
 [templates.snappy]
 input_path = '~/.config/matugen/templates/snappy.ini'
 output_path = '~/.config/snappy-switcher/themes/custom.ini'
-post_hook = 'pkill -9 snappy-switcher; snappy-switcher --daemon & disown'
+post_hook = 'pkill snappy-switcher; snappy-switcher --daemon & disown'
 
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
@@ -29,11 +29,20 @@ post_hook = 'pkill waybar && waybar & disown'
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
+pre_hook = 'rm ~/.config/gtk-3.0/gtk.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
 
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
-post_hook = 'pkill -9 nautilus'
+pre_hook = 'rm ~/.config/gtk-4.0/gtk.css'
+post_hook = '~/.config/matugen/scripts/gtk-themes-reload.sh'
+
+[templates.gtk4-dark]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk-dark.css'
+pre_hook = 'rm ~/.config/gtk-4.0/gtk-dark.css'
+post_hook = '~/.config/matugen/scripts/gtk-themes-reload.sh'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'
@@ -61,7 +70,7 @@ output_path = '~/.config/equibop/themes/OS-Theme.css'
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
-post_hook = 'pkill -USR2 btop || true'
+post_hook = 'pkill -SIGUSR1 btop || true'
 
 [templates.nvim]
 input_path = '~/.config/matugen/templates/nvim.json'
