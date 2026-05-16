@@ -1,10 +1,5 @@
 [config]
 
-[templates.snappy]
-input_path = '~/.config/noctalia/templates/snappy.ini'
-output_path = '~/.config/snappy-switcher/themes/custom.ini'
-post_hook = 'pkill snappy-switcher; snappy-switcher --daemon & disown'
-
 [templates.equicord]
 input_path = '~/.config/noctalia/templates/midnight-discord.css'
 output_path = '~/.config/equibop/themes/OS-Theme.css'

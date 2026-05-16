@@ -65,7 +65,6 @@ qt6-wayland
 satty
 sddm
 stow
-snappy-switcher
 steam
 tree
 tree-sitter-cli
