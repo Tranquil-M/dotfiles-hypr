@@ -10,7 +10,7 @@ declare -A MONITOR_WORKSPACES
 generate_monitor_workspaces() {
     local START_WORKSPACE=1
 
-    # get all monitor devices with hq
+    # get all monitor devices with jq
     local MONITORS=$(hyprctl monitors -j | jq -r '.[].name')
 
     # iterate through all monitors and add declare hashmaps with num of workspaces
@@ -42,5 +42,3 @@ append_new_mappings() {
 generate_monitor_workspaces
 cleanup_old_mappings
 append_new_mappings
-
-hyprctl reload
