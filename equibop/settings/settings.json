@@ -1965,7 +1965,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1778896828204
+        "settingsSyncVersion": 1778900409881
     },
     "ignoreResetWarning": false,
     "userCssVars": {}
