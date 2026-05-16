@@ -25,6 +25,7 @@ fi
 
 if ! sudo -n true 2>/dev/null; then
 	substep "${C_YELLOW}Note: sudo may prompt for your password during installaion${C_RESET}"
+    substep "${C_RED}This script will ${C_BOLD}OVERWRITE${C_RESET}${C_RED} any current configurations that you have. I STRONGLY recommend backing up your current configs before running this installer; unless that's what you want to happen."
 fi
 
 success "We're on Arch!"
@@ -46,11 +47,10 @@ substep "Make sure that you have a stable connection to wifi during this install
 echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}1 ${C_DIM}❯ ${C_RESET}I would love an sddm theme!"
 echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}2 ${C_DIM}❯ ${C_RESET}No thanks, move on."
 echo -ne "${C_MAIN}${C_BOLD} ╰─ ${C_YELLOW}Choice [1/2]: ${C_RESET}"
-read -rp "" QT_CHOICE
+read -rp "" SDDM
 
-if [ "$QT_CHOICE" == "1" ]; then
+if [ "$SDDM" == "1" ]; then
     sh "$INSTALLERS/install_sddm_themes.sh"
-    success "Done! :D"
 else
     echo "ok"
 fi
