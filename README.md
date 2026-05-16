@@ -53,15 +53,10 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 <a name="install"></a>
 ## Installation
 
-1. Download this repository with git:
+1. Execute the curl entrypoint with curl:
     ```bash
-    sudo pacman -Sy git; git clone https://github.com/Tranquil-M/dotfiles.git .dots; cd .dots
+    bash <(curl -sL https://raw.githubusercontent.com/Tranquil-M/dots/refs/heads/master/scripts/curl-entrypoint.sh)
     ```
-
-2. Run the installation script:
-   ```bash
-   sh install.sh
-   ```
 
 > [!NOTE]
 > The install script is currently only compatible with Arch Linux.
@@ -71,9 +66,23 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 <a name="walkthrough"></a>
 ## How does the install script work?
 
-1. Runs a packange installation script, and if a package cannot be found in official repositories, it installs [yay](https://github.com/jguer/yay) and scans the AUR.
-2. Uses GNU Stow to connect dotfiles using symlinks.
-3. Sets default apps and colors.
+**Curl Entrypoint**
+1. Verifies dependencies and operating system.
+2. Installs git if not present.
+3. Asks user if they want to clone using HTTPS or SSH
+4. Executes the dotfiles installer
+
+**Dotfiles installer**
+1. Verifies dependencies, operation system, and internet connection.
+2. Installs all the neccessary packages from `packages.txt` in the project root.
+3. Asks the user if they want to install am SDDM theme. \
+   This will clone [Darkkal44's qylock](https://github.com/Darkkal44/qylock) repository and run the corresponding installation script.
+5. Sets default file manager, browser, etc.
+6. Overwrites the current configuration in place with the new one, all synced with GNU stow.
+7. Runs post-installation script such as persistent workspace creation.
+
+>[!NOTE]
+>The curl entry point is completely optional, and serves as a wrapper for ease of use.
 
 ---
 
@@ -190,7 +199,7 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [Satty](https://github.com/Satty-org/Satty)
-* [Qylock]([https://github.com/uiriansan/SilentSDDM](https://github.com/Darkkal44/qylock))
+* [Qylock](https://github.com/Darkkal44/qylock)
 * [Slurp](https://github.com/emersion/slurp)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Noctalia](https://noctalia.dev/)
