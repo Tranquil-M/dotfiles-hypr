@@ -9,7 +9,7 @@
         "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
@@ -20,12 +20,12 @@
         "pinnedApps": [
         ],
         "position": "follow_bar",
-        "screenshotAnnotationTool": "",
+        "screenshotAnnotationTool": "satty -f -",
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
-        "viewMode": "grid"
+        "terminalCommand": "kitty -e",
+        "viewMode": "list"
     },
     "audio": {
         "mprisBlacklist": [
