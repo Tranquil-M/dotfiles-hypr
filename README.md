@@ -101,12 +101,13 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 ### Core actions
 - Super + Space → Open launcher
-- Super + C → Toggle control center
+- Super + C → Open control center
 - Super + S → Open settings
 - Super + M → Open media panel
 - Super + N → Open notification history
 - Super + X → Open emoji selector via launcher
 - Super + V → Open clipboard history via launcher
+- Super + B → Open battery panel
 - Alt + Tab → Tab Switcher
 
 ### System
