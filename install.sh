@@ -1,20 +1,8 @@
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 INSTALLERS="$SCRIPT_DIR/scripts"
-
 cd $SCRIPT_DIR
 
-# Reset Colors
-trap 'echo -ne "\033[0m"' EXIT
-
-# Palette
-C_MAIN='\033[38;2;202;169;224m'
-C_ACCENT='\033[38;2;145;177;240m'
-C_DIM='\033[38;2;129;122;150m'
-C_GREEN='\033[38;2;166;209;137m'
-C_YELLOW='\033[38;2;229;200;144m'
-C_RED='\033[38;2;231;130;132m'
-C_BOLD='\033[1m'
-C_RESET='\033[0m'
+source "scripts/ui.sh"
 
 header() {
     clear
@@ -25,22 +13,7 @@ header() {
     echo -e "${C_RESET}"
 }
 
-info() {
-    echo -e "${C_MAIN}${C_BOLD} ╭─ 󰓅 $1${C_RESET}"
-}
-
-substep() {
-    echo -e "${C_MAIN}${C_BOLD} │  ${C_DIM}❯ ${C_RESET}$1"
-}
-
-success() {
-    echo -e "${C_MAIN}${C_BOLD} ╰─ ${C_GREEN}✔ ${C_RESET}$1\n"
-}
-
-error() {
-    echo -e "${C_MAIN}${C_BOLD} ╰─ ${C_RED}✘ ${C_RESET}$1\n"
-}
-
+clear
 header
 
 info "Checking OS type..."
@@ -64,6 +37,8 @@ if ! ping -c 1 -W 1 8.8.8.8 &> /dev/null; then
 fi
 
 success "Internet connection found!"
+
+sh "$INSTALLERS/install_packages.sh"
 
 info "Would you like to install an SDDM theme?"
 substep "This will clone the \"qylock\" repository written by ${C_YELLOW}Darkkal44${C_RESET} on github."
@@ -109,5 +84,7 @@ info "Thanks!"
 substep "Thank you so much for using my dotfiles!"
 substep "${C_YELLOW}Please consider starring this repository and sharing this with your friends!${C_RESET}"
 success "Come again soon!"
+
+finish
 
 exit 0

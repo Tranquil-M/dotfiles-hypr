@@ -1,28 +1,47 @@
 #!/usr/bin/env bash
+
+source "scripts/ui.sh"
+
+info "Overwriting existing configuration..."
+
 if [[ -d "config/.config" ]]; then
     for ITEM in "config/.config"/*; do
         NAME=$(basename "$ITEM")
         TARGET="$HOME/.config/$NAME"
 
         if [[ -e "$TARGET" || -L "$TARGET" ]]; then
-            echo "Removing existing: $TARGET"
+            substep "Removing existing: $TARGET"
             rm -r "$TARGET"
         fi
     done
 fi
 
+substep "Applying bash related files..."
 stow bash
+
+substep "Applying configuration files..."
 stow config
 
-if [[ -d "~/.config/equibop" ]]; then
+if [[ -d "$HOME/.config/equibop" ]]; then
+    substep "Restting equibop configuration..."
     rm -r ~/.config/equibop
 fi
 
 mkdir -p ~/.config/equibop
+
+substep "Applying equibop settings..."
 stow --target ~/.config/equibop equibop
 
+if [[ -d "~/.local/share/icons/DOT-dark" ]]; then
+    substep "Resetting Mouse Cursor Theme..."
+    rm -rf ~/.local/share/icons/DOT-dark
+fi
+
+substep "Applying mouse cursor theme..."
 stow icons
 
+substep "Creating Wallpapers..."
 mkdir -p ~/Pictures
 stow --adopt wallpapers
 
+success "Dotfiles creation complete!"
