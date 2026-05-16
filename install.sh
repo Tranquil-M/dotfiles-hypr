@@ -34,6 +34,9 @@ info "Checking for internet connection..."
 
 if ! ping -c 1 -W 1 8.8.8.8 &> /dev/null; then
 	error "A stable internet connection is required for this installation."
+    info "Script location"
+    substep "This script is located int $SCRIPT_DIR. Go fix your internet connection and re-run this script"
+    error "No connection"
 	exit 1
 fi
 
