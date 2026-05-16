@@ -23,27 +23,27 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 ## How does it look?
 
 ### Desktop
-![Desktop](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Window.png?raw=true)
+![Desktop](https://github.com/Tranquil-M/dots/blob/master/Sample/Window.png?raw=true)
 
 ### Launcher
-![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Launcher.png?raw=true)
+![Application Selector](https://github.com/Tranquil-M/dots/blob/master/Sample/Launcher.png?raw=true)
 
 ### Wallpaper Selector
-![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
+![Wallpaper Selector](https://github.com/Tranquil-M/dots/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
 
 ### Notification Manager
-![Notification Manager](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Notification%20Center.png?raw=true)
+![Notification Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Notification%20Center.png?raw=true)
 
 ### Lock Manager
-![Lock Manager](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Lock%20Manager.png?raw=true)
+![Lock Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Lock%20Manager.png?raw=true)
 
 ### Settings
-![Settings](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Settings.png?raw=true)
+![Settings](https://github.com/Tranquil-M/dots/blob/master/Sample/Settings.png?raw=true)
 
 ### Other Wallpaper Colors
-![Minecraft Purple](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Purple.png?raw=true)
-![Anord Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Pink.png?raw=true)
-![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Green.png?raw=true)
+![Minecraft Purple](https://github.com/Tranquil-M/dots/blob/master/Sample/Purple.png?raw=true)
+![Anord Pink](https://github.com/Tranquil-M/dots/blob/master/Sample/Pink.png?raw=true)
+![Cat Club Green](https://github.com/Tranquil-M/dots/blob/master/Sample/Green.png?raw=true)
 
 > [!NOTE]
 > All wallpaper colors are completely adaptive! It changes everything, all just depends on what wallpaper you are using.
