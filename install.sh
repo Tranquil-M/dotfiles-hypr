@@ -16,6 +16,9 @@ if [ -f /etc/arch-release ]; then
     echo "Installing Firefox Themes"
     sh scripts/install_firefox_theme.sh
     
+    echo "Running Post Install Scripts"
+    sh ~/.config/hypr/conf.d/scripts/create_workspaces.sh
+
     echo "All done!"
     exit 0
 fi
