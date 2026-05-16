@@ -105,6 +105,8 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 - Super + S → Open settings
 - Super + M → Open media panel
 - Super + N → Open notification history
+- Super + X → Open emoji selector via launcher
+- Super + V → Open clipboard history via launcher
 
 ### System
 - Super + A → Toggle Bar Visibility
