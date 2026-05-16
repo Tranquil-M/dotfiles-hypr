@@ -1,0 +1,26 @@
+[config]
+
+[templates.snappy]
+input_path = '~/.config/noctalia/templates/snappy.ini'
+output_path = '~/.config/snappy-switcher/themes/custom.ini'
+post_hook = 'pkill snappy-switcher; snappy-switcher --daemon & disown'
+
+[templates.equicord]
+input_path = '~/.config/noctalia/templates/midnight-discord.css'
+output_path = '~/.config/equibop/themes/OS-Theme.css'
+
+[templates.btop]
+input_path = '~/.config/noctalia/templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -SIGUSR1 btop || true'
+
+[templates.nvim]
+input_path = '~/.config/noctalia/templates/nvim.json'
+output_path = '~/.config/nvim/matugen.json'
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[templates.firefox-website-colors]
+pre_hook = "pkill nautilus"
+input_path = "~/.config/noctalia/templates/firefox-colors.css"
+output_path = "~/.mozilla/firefox/colors.css"
+post_hook = 'sh ~/.config/noctalia/scripts/install_website_colors.sh'

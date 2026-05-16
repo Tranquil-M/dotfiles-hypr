@@ -22,30 +22,30 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 <a name="looks"></a>
 ## How does it look?
 
-### Window
-![Default Color Scheme](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Window.png?raw=true)
+### Desktop
+![Desktop](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Window.png?raw=true)
 
-### Rofi
-![Application Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Rofi%206.png?raw=true)
+### Launcher
+![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Launcher.png?raw=true)
 
 ### Wallpaper Selector
-![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
-
-### Tab Switcher
-![Tab Switcher](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Tab%20Switcher.png?raw=true)
+![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
 
 ### Notification Manager
-![SwayNC](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Notification%20Center.png?raw=true)
+![Notification Manager](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Notification%20Center.png?raw=true)
 
-### Wlogout
-![Wlogout](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/WLogout.png?raw=true)
+### Lock Manager
+![Lock Manager](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Lock%20Manager.png?raw=true)
+
+### Settings
+![Settings](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Settings.png?raw=true)
 
 ### Other Wallpaper Colors
-![Minecraft Purple](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Purple.png?raw=true)
-![Cat Pink](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Pink.png?raw=true)
-![Cat Club Green](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Green.png?raw=true)
+![Minecraft Purple](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Purple.png?raw=true)
+![Anord Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Pink.png?raw=true)
+![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Green.png?raw=true)
 
-> [!IMPORTANT]
+> [!NOTE]
 > All wallpaper colors are completely adaptive! It changes everything, all just depends on what wallpaper you are using.
 
 ---
@@ -53,28 +53,27 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 <a name="install"></a>
 ## Installation
 
-1. Install chezmoi
+1. Download this repository with git:
     ```bash
-    sudo pacman -Sy chezmoi
+    sudo pacman -Sy git; git clone https://github.com/Tranquil-M/dotfiles.git .dots; cd .dots
     ```
 
-2. Initialize and apply this repository:
+2. Run the installation script:
    ```bash
-   chezmoi init --apply Tranquil-M
+   sh install.sh
    ```
 
 > [!NOTE]
-> The install script's package install capability is currently only functional for Arch-based distros.
+> The install script is currently only compatible with Arch Linux.
 
 ---
 
 <a name="walkthrough"></a>
 ## How does the install script work?
 
-1. Uses Chezmoi to run package installation scripts, looking for a file named `packages-arch.txt` in `~/.local/share/chezmoi`. Multi-OS support is planned in the future.
-2. If a package cannot be found in official repositories, it installs [yay](https://github.com/jguer/yay) and scans the AUR.
-3. Sets default applications and colors.
-4. Updates the system, and prompts you to restart.
+1. Runs a packange installation script, and if a package cannot be found in official repositories, it installs [yay](https://github.com/jguer/yay) and scans the AUR.
+2. Uses GNU Stow to connect dotfiles using symlinks.
+3. Sets default apps and colors.
 
 ---
 
@@ -85,57 +84,82 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 - Screenshot utility using Grim, Slurp, and Satty  
   Saves to: `~/Pictures/Screenshots`
-- Wallpaper switcher using Matugen  
-  Add wallpapers to: `~/Pictures/Wallpapers`; It can be any standard image filetype.
-- Rofi integration:
-    - Application launcher  
-    - SSH window
-    - Emoji picker
-- Control Panel using SwayNC
-- Tab Switcher
+- Wallpaper switcher, Application Launcher, Lockscreen, Logout Menu, and Control Panel with Noctalia
+- Tab Switcher using Snappy Switcher
 - Custom Discord theme using Equibop (Discord Client)
 - Kickstart Nvim configuration
 - Exa (enhanced `ls`)  
 - Zoxide (enhanced `cd`)  
 - On-screen display (volume/backlight/capslock indicator) via SwayOSD  
-- Hyprlock lockscreen  
-- Wlogout logout menu  
 - Firefox theme using pywal-fox and custom css  
 - SilentSDDM login screen
 
 ---
 
 <a name="binds"></a>
-## Bindings
+## Keybindings
 
-### Core
-- **Terminal** → `Super + Return`  
-- **Kill Active Window** → `Super + W`  
-- **Log Out of Hyprland** → `Super + M`  
-- **File Manager** → `Super + Shift + F`  
+### Core actions
+- Super + Space → Open launcher
+- Super + C → Toggle control center
+- Super + S → Open settings
+- Super + M → Open media panel
+- Super + N → Open notification history
 
-### Window Management
-- **Toggle Floating** → `Super + T`  
-- **Toggle Split** → `Super + J`  
-- **Fake Fullscreen** → `Super + F`  
-- **Real Fullscreen** → `Super + Alt + F`  
+### System
+- Super + A → Toggle Bar Visibility
 
-### UI / Tools
-- **Rofi Launcher** → `Super + Space`  
-- **Reload Waybar** → `Super + R`  
-- **Notification Center** → `Super + N`  
-- **Wlogout Menu** → `Super + Backspace`  
-- **Wallpaper Picker** → `Super + E`  
-- **Screenshot** → `Super + Z`  
-- **Always On Top Waybar Toggle** `Super + A`
+### Applications
+- Super + Enter → Open terminal
+- Super + Shift + F → Open file manager
+- Super + E → Toggle wallpaper
+
+### Media controls
+- Volume up key → Increase volume
+- Volume down key → Decrease volume
+- Mute key → Mute audio
+- Brightness up key → Increase brightness
+- Brightness down key → Decrease brightness
+- Next track → Next song
+- Play/Pause → Play or pause media
+- Previous track → Previous song
+
+### Screenshots
+- Super + Z → Capture selected area
+- Super + Shift + Z → Capture full screen
+
+### Window management
+- Super + W → Close active window
+- Super + T → Toggle floating window
+- Super + Backspace → Open session menu
+- Super + F → Fullscreen mode
+- Super + Alt + F → Exit fullscreen mode
 
 ### Notifications
-- **Close Latest** → `Super + Comma`  
-- **Close All** → `Super + Shift + Comma`  
+- Super + Comma → Remove oldest notification
+- Super + Shift + Comma → Clear all notifications
+
+### Focus navigation
+- Super + Arrow keys → Move focus between windows
+
+### Move windows
+- Super + Shift + Arrow keys → Move window in direction
 
 ### Workspaces
-- **Switch Workspace** → `Super + 1-9`  
-- **Move Window to Workspace** → `Super + Shift + 1-9`
+- Super + 1–0 → Switch to workspace 1–10
+- Super + Shift + 1–0 → Move window to workspace 1–10
+- Super + Mouse wheel → Switch workspaces
+
+### Mouse actions
+- Super + Left click drag → Move window
+- Super + Right click drag → Resize window
+
+### Window switching
+- Alt + Tab → Next window
+- Alt + Shift + Tab → Previous window
+
+### Laptop
+- Close lid → Lock screen and suspend system
 
 >[!NOTE]
 >Temporary workspaces are supported, but a minimum of 3 persistent workspaces are assigned per-monitor on startup.
@@ -146,25 +170,18 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 ## Packages
 
 * [Btop](https://github.com/aristocratos/btop)
-* [Chezmoi](https://www.chezmoi.io/)
+* [GNU Stow](https://www.gnu.org/software/stow/)
 * [Equibop](https://equicord.org/)
 * [Exa](https://github.com/ogham/exa)
 * [Grim](https://github.com/emersion/grim)
-* [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
 * [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
 * [Kitty](https://sw.kovidgoyal.net/kitty/)
 * [Little Fox](https://github.com/biglavis/LittleFox)
-* [Matugen](https://github.com/InioX/matugen)
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-* [Rofi](https://github.com/davatorium/rofi)
-* [Rofi Theme](https://github.com/newmanls/rofi-themes-collection)
-* [Rofi-Emoji](https://github.com/Mange/rofi-emoji)
 * [Satty](https://github.com/Satty-org/Satty)
 * [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
 * [Slurp](https://github.com/emersion/slurp)
 * [Snappy Switcher](https://github.com/OpalAayan/snappy-switcher)
-* [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
-* [SwayOSD](https://github.com/ErikReider/SwayOSD)
-* [Wlogout](https://github.com/ArtsyMacaw/wlogout)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
+* [Noctalia](https://noctalia.dev/)
