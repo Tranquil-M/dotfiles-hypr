@@ -13,6 +13,12 @@ fi
 
 stow bash
 stow config
+
+if [[ -d "~/.config/equibop" ]]; then
+    rm -rf ~/.config/equibop
+fi
+stow --target ~/.config/equibop equibop/.config/equibop
+
 stow icons
 
 mkdir -p ~/Pictures
