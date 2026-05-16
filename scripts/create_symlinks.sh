@@ -15,9 +15,9 @@ stow bash
 stow config
 
 if [[ -d "~/.config/equibop" ]]; then
-    rm -rf ~/.config/equibop
+    rm -r ~/.config/equibop
 fi
-stow --target ~/.config/equibop equibop/.config/equibop
+stow --target ~/.config/equibop equibop
 
 stow icons
 
