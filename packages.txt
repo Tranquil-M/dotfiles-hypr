@@ -62,6 +62,11 @@ qt6-multimedia
 qt6-svg
 qt6-virtualkeyboard
 qt6-wayland
+qt6-5compat
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
 satty
 sddm
 stow

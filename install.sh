@@ -7,6 +7,9 @@ if [ -f /etc/arch-release ]; then
     echo "Installing Packages"
     sh scripts/install_packages.sh
     
+    echo "Installing SDDM Themes"
+    sh scripts/install_sddm_themes.sh
+
     echo "Setting Defaults"
     sh scripts/set_defaults.sh
 
@@ -15,7 +18,7 @@ if [ -f /etc/arch-release ]; then
 
     echo "Installing Firefox Themes"
     sh scripts/install_firefox_theme.sh
-    
+
     echo "Running Post Install Scripts"
     sh ~/.config/hypr/conf.d/scripts/create_workspaces.sh
 
