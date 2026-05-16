@@ -1,6 +1,6 @@
 {
     "appLauncher": {
-        "autoPasteClipboard": false,
+        "autoPasteClipboard": true,
         "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
         "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
         "clipboardWrapText": true,
@@ -13,16 +13,16 @@
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": false,
         "enableSettingsSearch": false,
-        "enableWindowsSearch": true,
+        "enableWindowsSearch": false,
         "iconMode": "native",
         "ignoreMouseInput": true,
-        "overviewLayer": true,
+        "overviewLayer": false,
         "pinnedApps": [
         ],
         "position": "follow_bar",
         "screenshotAnnotationTool": "satty -f -",
         "showCategories": false,
-        "showIconBackground": false,
+        "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
         "viewMode": "list"
