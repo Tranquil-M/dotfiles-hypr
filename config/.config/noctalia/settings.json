@@ -372,6 +372,43 @@
                         "y": 740
                     }
                 ]
+            },
+            {
+                "name": "DP-1",
+                "widgets": [
+                    {
+                        "id": "Weather",
+                        "roundedCorners": true,
+                        "scale": 1,
+                        "showBackground": true,
+                        "x": 20,
+                        "y": 940
+                    },
+                    {
+                        "hideMode": "visible",
+                        "id": "MediaPlayer",
+                        "roundedCorners": true,
+                        "scale": 1,
+                        "showAlbumArt": true,
+                        "showBackground": true,
+                        "showButtons": true,
+                        "showVisualizer": true,
+                        "visualizerType": "linear",
+                        "x": 320,
+                        "y": 940
+                    },
+                    {
+                        "defaultSettings": {
+                            "roundedCorners": true,
+                            "showBackground": true
+                        },
+                        "id": "plugin:calendar-widget",
+                        "scale": 1.2830188679245282,
+                        "showBackground": true,
+                        "x": 20,
+                        "y": 540
+                    }
+                ]
             }
         ],
         "overviewEnabled": true
@@ -547,7 +584,7 @@
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
-        "enableMediaToast": true,
+        "enableMediaToast": false,
         "enabled": true,
         "location": "top",
         "lowUrgencyDuration": 3,
@@ -716,7 +753,7 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "JetBrainsMono Nerd Font Mono",
+        "fontDefault": "Adwaita Sans",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,

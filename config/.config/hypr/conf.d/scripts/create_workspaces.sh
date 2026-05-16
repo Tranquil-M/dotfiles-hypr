@@ -34,7 +34,7 @@ append_new_mappings() {
     for MONITOR in "${!MONITOR_WORKSPACES[@]}"; do
         local WORKSPACES=${MONITOR_WORKSPACES[$MONITOR]}
         for WORKSPACE in $WORKSPACES; do
-          echo "workspace=$WORKSPACE, monitor:$MONITOR" >> "$HYPRLAND_CONFIG"
+          echo "workspace=$WORKSPACE, monitor:$MONITOR, persistent:true" >> "$HYPRLAND_CONFIG"
         done
     done
 }

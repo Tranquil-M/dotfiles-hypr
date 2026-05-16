@@ -16,7 +16,6 @@
         "Profile Color Fix.theme.css",
         "Stage Icon Recolor.theme.css",
         "NSFW icon recolor.theme.css",
-        "noctalia.theme.css",
         "OS-Theme.css"
     ],
     "enabledThemeLinks": [],
@@ -911,7 +910,7 @@
             "removeAudioMenus": true,
             "alwaysShowUsername": true,
             "removeButtonTooltips": true,
-            "removeAvatarDecoration": false,
+            "removeAvatarDecoration": true,
             "removeUsernameStyles": true,
             "removeProfileEffect": true,
             "removeClanTag": true,
@@ -1332,7 +1331,7 @@
             },
             "disableAccountPanelQuestProgress": false,
             "isOnQuestsPage": false,
-            "questButtonBadgeCount": 5,
+            "questButtonBadgeCount": 7,
             "questButtonBadgeColor": 2842239,
             "questButtonLeftClickAction": "open-quests",
             "questButtonMiddleClickAction": "plugin-settings",
@@ -1966,7 +1965,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1778827637355
+        "settingsSyncVersion": 1778894636969
     },
     "ignoreResetWarning": false,
     "userCssVars": {}

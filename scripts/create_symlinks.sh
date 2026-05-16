@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-if [[ -d "$SCRIPT_DOR/config/.config" ]]; then
-    for ITEM in "$CONFIG_SOURCE"/*; do
+if [[ -d "config/.config" ]]; then
+    for ITEM in "config/.config"/*; do
         NAME=$(basename "$ITEM")
         TARGET="$HOME/.config/$NAME"
 
