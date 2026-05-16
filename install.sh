@@ -50,6 +50,7 @@ echo -ne "${C_MAIN}${C_BOLD} ╰─ ${C_YELLOW}Choice [1/2]: ${C_RESET}"
 read -rp "" SDDM
 
 if [ "$SDDM" == "1" ]; then
+    echo ""
     sh "$INSTALLERS/install_sddm_themes.sh"
 else
     echo "ok"
