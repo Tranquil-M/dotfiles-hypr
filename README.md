@@ -84,15 +84,21 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 - Screenshot utility using Grim, Slurp, and Satty  
   Saves to: `~/Pictures/Screenshots`
-- Wallpaper switcher, Application Launcher, Lockscreen, Logout Menu, and Control Panel with Noctalia
-- Tab Switcher using Snappy Switcher
+- Noctalia
+    - Wallpaper switcher
+    - Application Launcher
+    - Lockscreen
+    - Logout Menu
+    - Clipboard History
+    - Tab switcher
+    - Control Panel
+    - On-screen display
 - Custom Discord theme using Equibop (Discord Client)
 - Kickstart Nvim configuration
-- Exa (enhanced `ls`)  
-- Zoxide (enhanced `cd`)  
-- On-screen display (volume/backlight/capslock indicator) via SwayOSD  
+- Exa
+- Zoxide
 - Firefox theme using pywal-fox and custom css  
-- SilentSDDM login screen
+- Qylock customizable sddm themes
 
 ---
 
@@ -184,8 +190,7 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [Satty](https://github.com/Satty-org/Satty)
-* [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
+* [Qylock]([https://github.com/uiriansan/SilentSDDM](https://github.com/Darkkal44/qylock))
 * [Slurp](https://github.com/emersion/slurp)
-* [Snappy Switcher](https://github.com/OpalAayan/snappy-switcher)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Noctalia](https://noctalia.dev/)
