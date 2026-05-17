@@ -601,7 +601,7 @@
         "sounds": {
             "criticalSoundFile": "/home/beepew/.config/noctalia/notification.mp3",
             "enabled": true,
-            "excludedApps": "discord,equibop,firefox,chrome,chromium,edge",
+            "excludedApps": "discord,firefox,chrome,chromium,edge",
             "lowSoundFile": "/home/beepew/.config/noctalia/notification.mp3",
             "normalSoundFile": "/home/beepew/.config/noctalia/notification.mp3",
             "separateSounds": false,
