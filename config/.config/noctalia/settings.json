@@ -16,7 +16,7 @@
         "enableWindowsSearch": false,
         "iconMode": "native",
         "ignoreMouseInput": true,
-        "overviewLayer": false,
+        "overviewLayer": true,
         "pinnedApps": [
         ],
         "position": "follow_bar",
