@@ -75,8 +75,7 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 **Dotfiles installer**
 1. Verifies dependencies, operation system, and internet connection.
 2. Installs all the neccessary packages from `packages.txt` in the project root.
-3. Asks the user if they want to install am SDDM theme. \
-   This will clone [Darkkal44's qylock](https://github.com/Darkkal44/qylock) repository and run the corresponding installation script.
+3. Asks the user if they want to install am SDDM theme. This will clone [Darkkal44's qylock](https://github.com/Darkkal44/qylock) and run the corresponding installation script.
 5. Sets default file manager, browser, etc.
 6. Overwrites the current configuration in place with the new one, all synced with GNU stow.
 7. Runs post-installation script such as persistent workspace creation.
