@@ -3,7 +3,7 @@
 clear
 echo "Checking OS type..."
 if ! command -v pacman &> /dev/null; then
-	error "Sorry, this script is only available on Arch Linux Distributions."
+	echo "Sorry, this script is only available on Arch Linux Distributions."
 	exit 1
 fi
 echo "Arch Linux Detected"

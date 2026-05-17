@@ -1962,10 +1962,10 @@
         "logLimit": 50
     },
     "cloud": {
-        "authenticated": true,
+        "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1778910404373
+        "settingsSyncVersion": 1778977995118
     },
     "ignoreResetWarning": false,
     "userCssVars": {}
