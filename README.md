@@ -2,9 +2,6 @@ Welcome to...
 
 # Tranquil's Hyprland Dot Files
 
-This is a repository of my preferred Hyprland setup, primarily used on Arch-based distributions.
----
-
 ## Table of Contents
 
 | Category | Description |
@@ -16,38 +13,29 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 | [Bindings](#binds) | Keybindings list |
 | [Used Packages](#pkgs) | All packages used |
 
----
-
 <a name="looks"></a>
 ## How does it look?
 
-### Desktop
-![Desktop](https://github.com/Tranquil-M/dots/blob/master/Sample/Window.png?raw=true)
+| Desktop | Launcher |
+| :---: | :---: |
+| ![Desktop](https://github.com/Tranquil-M/dots/blob/master/Sample/Window.png?raw=true) | ![Launcher](https://github.com/Tranquil-M/dots/blob/master/Sample/Launcher.png?raw=true) |
 
-### Launcher
-![Application Selector](https://github.com/Tranquil-M/dots/blob/master/Sample/Launcher.png?raw=true)
+|  Wallpaper Selector | Notification Manager |
+| :---: | :---: |
+| ![Wallpaper Selector](https://github.com/Tranquil-M/dots/blob/master/Sample/Wallpaper%20Selector.png?raw=true) | ![Notification Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Notification%20Center.png?raw=true) |
 
-### Wallpaper Selector
-![Wallpaper Selector](https://github.com/Tranquil-M/dots/blob/master/Sample/Wallpaper%20Selector.png?raw=true)
+| Lock Manager | Settings |
+| :---: | :---: |
+| ![Lock Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Lock%20Manager.png?raw=true) | ![Settings](https://github.com/Tranquil-M/dots/blob/master/Sample/Settings.png?raw=true) |
 
-### Notification Manager
-![Notification Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Notification%20Center.png?raw=true)
+## Color Examples
 
-### Lock Manager
-![Lock Manager](https://github.com/Tranquil-M/dots/blob/master/Sample/Lock%20Manager.png?raw=true)
-
-### Settings
-![Settings](https://github.com/Tranquil-M/dots/blob/master/Sample/Settings.png?raw=true)
-
-### Other Wallpaper Colors
-![Minecraft Purple](https://github.com/Tranquil-M/dots/blob/master/Sample/Purple.png?raw=true)
-![Anord Pink](https://github.com/Tranquil-M/dots/blob/master/Sample/Pink.png?raw=true)
-![Cat Club Green](https://github.com/Tranquil-M/dots/blob/master/Sample/Green.png?raw=true)
+| Minecraft Purple | Anord Pink | Cat Club Green |
+| :---: | :---: | :---: |
+| ![Purple](https://github.com/Tranquil-M/dots/blob/master/Sample/Purple.png?raw=true) | ![Pink](https://github.com/Tranquil-M/dots/blob/master/Sample/Pink.png?raw=true) | ![Green](https://github.com/Tranquil-M/dots/blob/master/Sample/Green.png?raw=true) |
 
 > [!NOTE]
 > All wallpaper colors are completely adaptive! It changes everything, all just depends on what wallpaper you are using.
-
----
 
 <a name="install"></a>
 ## Installation
@@ -57,10 +45,8 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
     bash <(curl -sL https://raw.githubusercontent.com/Tranquil-M/dots/refs/heads/master/scripts/curl-entrypoint.sh)
     ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The install script is currently only compatible with Arch Linux.
-
----
 
 <a name="walkthrough"></a>
 ## How does the install script work?
@@ -81,8 +67,6 @@ This is a repository of my preferred Hyprland setup, primarily used on Arch-base
 
 >[!NOTE]
 >The curl entry point is completely optional, and serves as a wrapper for ease of use.
-
----
 
 <a name="feat"></a>
 ## Features
@@ -106,8 +90,6 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 - Zoxide
 - Firefox theme using pywal-fox and custom css  
 - Qylock customizable sddm themes
-
----
 
 <a name="binds"></a>
 ## Keybindings
@@ -178,10 +160,9 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 ### Laptop
 - Close lid → Lock screen and suspend system
 
->[!NOTE]
->Temporary workspaces are supported, but a minimum of 3 persistent workspaces are assigned per-monitor on startup.
+> [!NOTE]
+> Temporary workspaces are supported, but a minimum of 3 persistent workspaces are assigned per-monitor on startup.
 
----
 <a name="pkgs">
 
 ## Packages
