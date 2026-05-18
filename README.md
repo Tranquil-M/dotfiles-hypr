@@ -3,7 +3,6 @@ Welcome to...
 # Tranquil's Hyprland Dot Files
 
 This is a repository of my preferred Hyprland setup, primarily used on Arch-based distributions.
-
 ---
 
 ## Table of Contents
@@ -202,3 +201,6 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Slurp](https://github.com/emersion/slurp)
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Noctalia](https://noctalia.dev/)
+
+---
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I61Z3QJH)
