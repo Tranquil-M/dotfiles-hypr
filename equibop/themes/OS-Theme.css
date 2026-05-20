@@ -32,27 +32,27 @@
     --accent-1: #dcbce0;            /* links */
 	--accent-2: #aac7ff;             /* general unread/mention elements, some icons when active */
 	--accent-3: #aac7ff;             /* accent buttons */
-	--accent-4: #38393c;      /* accent buttons when hovered */
+	--accent-4: #393939;      /* accent buttons when hovered */
 	--accent-5: #aac7ff;   /* accent buttons when clicked */
-	--mention:  #121316;             /* mentions & mention messages */
-	--mention-hover: #38393c; /* mentions & mention messages when hovered */
+	--mention:  #131313;             /* mentions & mention messages */
+	--mention-hover: #393939; /* mentions & mention messages when hovered */
 
 	/* text colors */
-	--text-0: #121316;               /* text on colored elements */
-	--text-1: #e3e2e6;            /* other normally white text */
-	--text-2: #e3e2e6;            /* headings and important text */
-	--text-3: #c4c6d0;    /* normal text */
-	--text-4: #c4c6d0;    /* icon buttons and channels */
-	--text-5: #8e9099;               /* muted channels/chats and timestamps */
+	--text-0: #131313;               /* text on colored elements */
+	--text-1: #e2e2e2;            /* other normally white text */
+	--text-2: #e2e2e2;            /* headings and important text */
+	--text-3: #c6c6c6;    /* normal text */
+	--text-4: #c6c6c6;    /* icon buttons and channels */
+	--text-5: #919191;               /* muted channels/chats and timestamps */
 
 	/* background and dark colors */
     --bg-1: #aac7ff;                             /* dark buttons when clicked */
-	--bg-2: #292a2d;              /* dark buttons */
-	--bg-3: #1a1b1e;               /* spacing, secondary elements */
-	--bg-4: #121316;                             /* main background color */
-	--hover: #38393c;                     /* channels and buttons when hovered */
-	--active: #38393c;                    /* channels and buttons when clicked or selected */
-	--message-hover: #38393c;             /* messages when hovered */
+	--bg-2: #2a2a2a;              /* dark buttons */
+	--bg-3: #1b1b1b;               /* spacing, secondary elements */
+	--bg-4: #131313;                             /* main background color */
+	--hover: #393939;                     /* channels and buttons when hovered */
+	--active: #393939;                    /* channels and buttons when clicked or selected */
+	--message-hover: #393939;             /* messages when hovered */
 
 	/* amount of spacing and padding */
 	--spacing: 12px;

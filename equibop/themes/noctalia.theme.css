@@ -77,22 +77,22 @@ body {
   --colors: on; /* off: discord default colors, on: midnight custom colors */
 
   /* text colors */
-  --text-0: #121316; /* text on colored elements */
-  --text-1: #e3e2e6; /* other normally white text */
-  --text-2: #e3e2e6; /* headings and important text */
-  --text-3: #c4c6d0; /* normal text */
-  --text-4: #8e9099; /* icon buttons and channels */
-  --text-5: #44474e; /* muted channels/chats and timestamps */
+  --text-0: #131313; /* text on colored elements */
+  --text-1: #e2e2e2; /* other normally white text */
+  --text-2: #e2e2e2; /* headings and important text */
+  --text-3: #c6c6c6; /* normal text */
+  --text-4: #919191; /* icon buttons and channels */
+  --text-5: #474747; /* muted channels/chats and timestamps */
 
   /* background and dark colors */
-  --bg-1: #0d0e11; /* dark buttons when clicked */
-  --bg-2: #1a1b1e; /* dark buttons */
-  --bg-3: #1e1f23; /* spacing, secondary elements */
-  --bg-4: #121316; /* main background color */
-  --hover: #e3e2e615; /* channels and buttons when hovered */
-  --active: #343538; /* channels and buttons when clicked or selected */
-  --active-2: #121316; /* extra state for transparent buttons */
-  --message-hover: #44474e40; /* messages when hovered */
+  --bg-1: #0e0e0e; /* dark buttons when clicked */
+  --bg-2: #1b1b1b; /* dark buttons */
+  --bg-3: #1f1f1f; /* spacing, secondary elements */
+  --bg-4: #131313; /* main background color */
+  --hover: #e2e2e215; /* channels and buttons when hovered */
+  --active: #353535; /* channels and buttons when clicked or selected */
+  --active-2: #131313; /* extra state for transparent buttons */
+  --message-hover: #47474740; /* messages when hovered */
 
   /* accent colors */
   --accent-1: #aac7ff; /* links and other accent text */

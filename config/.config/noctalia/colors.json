@@ -11,13 +11,13 @@
   "mError": "#ffb4ab",
   "mOnError": "#690005",
 
-  "mSurface": "#121316",
-  "mOnSurface": "#e3e2e6",
+  "mSurface": "#131313",
+  "mOnSurface": "#e2e2e2",
 
-  "mSurfaceVariant": "#1e1f23",
-  "mOnSurfaceVariant": "#c4c6d0",
+  "mSurfaceVariant": "#1f1f1f",
+  "mOnSurfaceVariant": "#c6c6c6",
   
-  "mOutline": "#44474e",
+  "mOutline": "#474747",
   "mShadow": "#000000",
 
   "mHover": "#dcbce0",

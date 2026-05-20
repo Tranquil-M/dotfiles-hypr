@@ -914,12 +914,12 @@
             "removeUsernameStyles": true,
             "removeProfileEffect": true,
             "removeClanTag": true,
-            "removeShopAboveDM": false,
-            "removeQuestsAboveDM": false,
             "removeServerBoostInfo": true,
             "removeBillingSettings": true,
             "removeGiftButton": true,
-            "removeUnavailableEmojiPicker": true
+            "removeUnavailableEmojiPicker": true,
+            "removeShopAboveDms": false,
+            "removeQuestsAboveDms": false
         },
         "DisableCameras": {
             "enabled": false
@@ -1948,6 +1948,12 @@
         },
         "Streaks": {
             "enabled": false
+        },
+        "DownloadAllAttachments": {
+            "enabled": false
+        },
+        "MarkdownTables": {
+            "enabled": false
         }
     },
     "uiElements": {
@@ -1965,8 +1971,9 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1778984858425
+        "settingsSyncVersion": 1779252313717
     },
     "ignoreResetWarning": false,
-    "userCssVars": {}
+    "userCssVars": {},
+    "windowsMaterial": "none"
 }
