@@ -30,13 +30,13 @@
     "audio": {
         "mprisBlacklist": [
         ],
-        "preferredPlayer": "",
+        "preferredPlayer": "mpv",
         "spectrumFrameRate": 30,
         "spectrumMirrored": true,
         "visualizerType": "linear",
-        "volumeFeedback": false,
+        "volumeFeedback": true,
         "volumeFeedbackSoundFile": "",
-        "volumeOverdrive": false,
+        "volumeOverdrive": true,
         "volumeStep": 5
     },
     "bar": {

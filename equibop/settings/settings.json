@@ -1331,7 +1331,7 @@
             },
             "disableAccountPanelQuestProgress": false,
             "isOnQuestsPage": false,
-            "questButtonBadgeCount": 7,
+            "questButtonBadgeCount": 9,
             "questButtonBadgeColor": 2842239,
             "questButtonLeftClickAction": "open-quests",
             "questButtonMiddleClickAction": "plugin-settings",
@@ -1971,7 +1971,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1779252313717
+        "settingsSyncVersion": 1779324708798
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
