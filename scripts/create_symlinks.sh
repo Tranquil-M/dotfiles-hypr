@@ -22,16 +22,6 @@ stow bash
 substep "Applying configuration files..."
 stow config
 
-if [[ -d "$HOME/.config/equibop" ]]; then
-    substep "Restting equibop configuration..."
-    rm -r ~/.config/equibop
-fi
-
-mkdir -p ~/.config/equibop
-
-substep "Applying equibop settings..."
-stow --target ~/.config/equibop equibop
-
 if [[ -d "~/.local/share/icons/DOT-dark" ]]; then
     substep "Resetting Mouse Cursor Theme..."
     rm -rf ~/.local/share/icons/DOT-dark
