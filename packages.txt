@@ -85,6 +85,7 @@ ttf-liberation
 ttf-meslo-nerd
 ttf-sourcecodepro-nerd
 ttf-symbola
+tlp
 udisks2
 unzip
 webapp-manager
