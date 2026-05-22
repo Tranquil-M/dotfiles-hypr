@@ -4,6 +4,7 @@ source "scripts/ui.sh"
 
 info "Setting defaults..."
 substep xdg-mime default org.gnome.Nautilus.desktop inode/directory
+substep sudo systemctl enable --now sddm.service
 substep sudo systemctl enable --now tlp.service
 substep sudo systemctl enable --now tlp-pd.service
 substep sudo tlp balanced

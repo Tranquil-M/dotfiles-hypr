@@ -17,6 +17,7 @@ if [[ -d "config/.config" ]]; then
 fi
 
 substep "Applying bash related files..."
+rm ~/.bashrc
 stow bash
 
 substep "Applying configuration files..."
@@ -28,7 +29,7 @@ if [[ -d "~/.local/share/icons/DOT-dark" ]]; then
 fi
 
 substep "Applying mouse cursor theme..."
-stow icons
+stow --target="$HOME/.local" icons
 
 substep "Creating Wallpapers..."
 mkdir -p ~/Pictures

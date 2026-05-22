@@ -13,7 +13,7 @@ echo ""
 echo "Checking for git"
 if ! command -v git &> /dev/null; then
 	echo "Git not found, installing..."
-	sudo pacman -Sy git --needed --no-confirm
+	sudo pacman -Sy git --needed
 fi
 echo "Git found"
 
@@ -30,7 +30,7 @@ echo ""
 
 if [ $response == 1 ]; then
 	echo "Cloning into ~/.dots using the HTTPS protocol"
-	git clone https://Tranquil-M/dots ~/.dots
+	git clone https://github.com/Tranquil-M/dots ~/.dots
 elif [ $response == 2 ]; then
 	echo "Cloning into ~/.dots using the SSH protocol"
 	git clone git@github.com:Tranquil-M/dots ~/.dots

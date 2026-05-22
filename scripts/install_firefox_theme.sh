@@ -5,27 +5,44 @@ source "scripts/ui.sh"
 
 info "Deploying firefox theme..."
 
-FIREFOX_DIR="$HOME/.mozilla/firefox"
+FIREFOX_DIRS=(
+    "$HOME/.mozilla/firefox"
+    "$HOME/.config/mozilla/firefox"
+)
 
-if [ ! -d "$FIREFOX_DIR" ]; then
+# Initialize Firefox profile if neither directory exists
+if [ ! -d "${FIREFOX_DIRS[0]}" ] && [ ! -d "${FIREFOX_DIRS[1]}" ]; then
     substep "Initializing Firefox profile..."
     timeout 5s firefox --headless > /dev/null 2>&1 || true
 fi
 
-for PROFILE in "$FIREFOX_DIR"/*.default-release "$FIREFOX_DIR"/*.default; do
-    if [ -d "$PROFILE" ]; then
+FOUND_PROFILE=false
+
+for FIREFOX_DIR in "${FIREFOX_DIRS[@]}"; do
+    [ -d "$FIREFOX_DIR" ] || continue
+
+    for PROFILE in \
+        "$FIREFOX_DIR"/*.default-release \
+        "$FIREFOX_DIR"/*.default \
+        "$FIREFOX_DIR"/*.profile-default; do
+
+        [ -d "$PROFILE" ] || continue
+
+        FOUND_PROFILE=true
+
         substep "Installing LittleFox theme to: $(basename "$PROFILE")"
-        
+
         mkdir -p "$PROFILE/chrome"
-        
+
         TEMP_THEME=$(mktemp -d)
+
         echo ""
         git clone --depth=1 https://github.com/biglavis/LittleFox "$TEMP_THEME"
         echo ""
 
-        substep "creating userChrome.css file"
+        substep "Creating userChrome.css file"
         cp "$TEMP_THEME/userChrome.css" "$PROFILE/chrome/"
-       
+
         substep "Creating user.js file"
         touch "$PROFILE/user.js"
 
@@ -34,10 +51,13 @@ for PROFILE in "$FIREFOX_DIR"/*.default-release "$FIREFOX_DIR"/*.default; do
             echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> "$PROFILE/user.js"
         fi
 
-        substep cleanup
+        substep "Cleanup"
         rm -rf "$TEMP_THEME"
-    fi
+    done
 done
 
-success "Firefox theme installation complete!"
+if [ "$FOUND_PROFILE" = false ]; then
+    info "No Firefox profiles found."
+fi
 
+success "Firefox theme installation complete!"
