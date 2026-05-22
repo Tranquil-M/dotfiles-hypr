@@ -29,7 +29,8 @@ if [[ -d "~/.local/share/icons/DOT-dark" ]]; then
 fi
 
 substep "Applying mouse cursor theme..."
-stow --target="$HOME/.local" icons
+mkdir -p "$HOME/.local/share/icons"
+stow --target="$HOME/.local/share/icons/" icons
 
 substep "Creating Wallpapers..."
 mkdir -p ~/Pictures
