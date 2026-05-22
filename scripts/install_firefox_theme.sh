@@ -10,7 +10,6 @@ FIREFOX_DIRS=(
     "$HOME/.config/mozilla/firefox"
 )
 
-# Initialize Firefox profile if neither directory exists
 if [ ! -d "${FIREFOX_DIRS[0]}" ] && [ ! -d "${FIREFOX_DIRS[1]}" ]; then
     substep "Initializing Firefox profile..."
     timeout 5s firefox --headless > /dev/null 2>&1 || true
