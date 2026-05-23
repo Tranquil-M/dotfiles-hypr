@@ -73,10 +73,10 @@ info "Would you like to reboot your computer?"
 substep "This may be required for some features to be properly set."
 echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}1 ${C_DIM}❯ ${C_RESET}Yes please!"
 echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}2 ${C_DIM}❯ ${C_RESET}Nah, just let me in already."
-echo -ne "${C_MAIN}${C_BOLD} ╰─ ${C_YELLOW}Choice [y/n]: ${C_RESET}"
+echo -ne "${C_MAIN}${C_BOLD} ╰─ ${C_YELLOW}Choice [1/2]: ${C_RESET}"
 read -rp "" CONSENT
 
-if [ "$CONSENT" == "y" ]; then
+if [ "$CONSENT" == "1" ]; then
     echo "OK BYE COME AGAIN"
     sudo reboot now
     exit 0
