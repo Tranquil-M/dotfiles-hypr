@@ -17,7 +17,21 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Actions
 hl.bind(mainMod .. " + W", hl.dsp.window.kill())
-hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + T", hl.dsp.window.center())
+hl.bind(mainMod .. " + T", function()
+
+	local monitor = hl.get_active_monitor()
+	local window = hl.get_active_window()
+
+	if monitor then
+		hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+		hl.dispatch(hl.dsp.window.center())
+		if window.floating then
+			hl.dispatch(hl.dsp.window.resize({ x = (monitor.width*0.4), y = (monitor.height*0.5) }))
+		end
+	end
+
+
+end)
+
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
-hl.bind(mainMod .. " + F",        hl.dsp.window.fullscreen({ mode = "maximized" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized" }))
