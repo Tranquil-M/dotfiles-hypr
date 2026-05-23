@@ -1,0 +1,6 @@
+hl.env("XCURSOR_SIZE", "16")
+hl.env("HYPRCURSOR_SIZE", "16")
+hl.env("XCURSOR_THEME", "GoogleDot-Black")
+hl.env("HYPRCURSOR_THEME", "GoogleDot-Black")
+hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
