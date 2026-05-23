@@ -37,6 +37,7 @@ localsend-bin
 lsp-plugins
 markdownlint-cli
 meson
+mpv
 nautilus
 neovim
 networkmanager
