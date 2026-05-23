@@ -21,10 +21,10 @@ fwupd
 fzf
 git
 glm
+grim
 hyprland
 hyprpicker
 hyprpolkitagent
-hyprshot
 imagemagick
 impala
 imv
@@ -71,6 +71,7 @@ satty
 sddm
 stow
 steam
+slurp
 tree
 tree-sitter-cli
 ttf-0xproto-nerd
