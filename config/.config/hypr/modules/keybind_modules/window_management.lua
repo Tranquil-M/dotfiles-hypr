@@ -16,7 +16,7 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Actions
-hl.bind(mainMod .. " + W", hl.dsp.window.kill())
+hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + T", function()
 
 	local monitor = hl.get_active_monitor()
