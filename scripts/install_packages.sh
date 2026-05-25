@@ -80,7 +80,7 @@ info "Installing Equicord Hook..."
 
 sudo mkdir -p /etc/pacman.d/hooks
 
-sudo tee /etc/pacman.d/hooks/discord-patcher.hook >/dev/null <<'EOF'
+sudo tee /etc/pacman.d/hooks/discord-patcher.hook >/dev/null <<EOF
 [Trigger]
 Operation = Install
 Operation = Upgrade
@@ -94,6 +94,10 @@ Exec = /usr/bin/equilotl -install -install-openasar -location "$HOME/.config/dis
 EOF
 
 success "Installed Hook"
+
+info "Updating discord..."
+install_pkg discord
+success "Discord updated!"
 
 info "Checking for orphaned packages..."
 
