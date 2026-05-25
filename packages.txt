@@ -10,10 +10,11 @@ btop
 calf
 cmake
 cpio
+discord
 dosfstools
 easyeffects
 efibootmgr
-equibop
+equicord-installer-bin
 eza
 firefox
 flatpak
