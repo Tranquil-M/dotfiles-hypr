@@ -117,4 +117,4 @@ for c in {a..z} {A..Z} {0..9} \
     _ghost_bind_char "$c"
 done
 
-echo "Ghost enabled - Ctrl Space accepts suggestions"
+echo "Ghost enabled - Space + Enter accepts suggestions"
