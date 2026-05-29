@@ -15,6 +15,3 @@ hl.bind(mainMod .. " + BACKSPACE", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle")
 -- Notifications
 hl.bind(mainMod .. " + COMMA",        hl.dsp.exec_cmd(ipc .. " notifications removeOldestHistory"))
 hl.bind(mainMod .. " + SHIFT + COMMA", hl.dsp.exec_cmd(ipc .. " notifications clear"))
-
--- Paste Fix
-hl.bind("CTRL + V", hl.dsp.exec_cmd("cliphist list | head -n 1 | cliphist decode | wl-copy && wtype -M ctrl v -m ctrl"))

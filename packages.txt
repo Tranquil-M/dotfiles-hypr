@@ -93,6 +93,7 @@ udisks2
 unzip
 webapp-manager
 wtype
+wl-clip-persist-git
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xf86-input-libinput

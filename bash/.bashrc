@@ -18,6 +18,7 @@ eval "$(zoxide init bash)"
 alias ls='eza -l'
 alias grep='grep --color=auto'
 alias cd='z'
+alias vim="nvim"
 if command -v pacman >/dev/null 2>&1; then
   alias rmorphans="sudo pacman -Rns $(pacman -Qdtq)"
   alias update="yay -Syyu; sudo pacman -Syyu; flatpak update"
