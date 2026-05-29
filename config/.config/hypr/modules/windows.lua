@@ -1,9 +1,16 @@
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
-    name  = "suppress-maximize-events",
+    name = "suppress-maximize-events",
     match = { class = ".*" },
 
     suppress_event = "maximize",
+})
+
+hl.window_rule({
+    name = "prevent-initial-focus",
+    match = { class = ".*" },
+
+    no_initial_focus = true
 })
 
 hl.window_rule({
