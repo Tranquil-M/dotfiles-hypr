@@ -26,6 +26,8 @@ grim
 hyprland
 hyprpicker
 hyprpolkitagent
+hyprshot
+hyprpicker
 imagemagick
 impala
 imv
