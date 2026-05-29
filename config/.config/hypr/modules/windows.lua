@@ -7,13 +7,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "prevent-initial-focus",
-    match = { class = ".*" },
-
-    no_initial_focus = true
-})
-
-hl.window_rule({
     -- Fix some dragging issues with XWayland
     name  = "fix-xwayland-drags",
     match = {
