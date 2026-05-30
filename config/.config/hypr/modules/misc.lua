@@ -6,4 +6,7 @@ hl.config({
         initial_workspace_tracking = 1,
         focus_on_activate = true,
     },
+    cursor = {
+        no_hardware_cursors = true
+    }
 })
