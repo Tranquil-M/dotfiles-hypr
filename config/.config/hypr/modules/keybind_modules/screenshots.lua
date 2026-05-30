@@ -2,5 +2,6 @@
 local mainMod = "SUPER"
 
 -- Execution
-hl.bind(mainMod .. " + z", hl.dsp.exec_cmd('hyprshot -m region --freeze -r -o --clipboard-only /tmp | satty --filename -'))
-hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd('hyprshot -m output --freeze -r -o --clipboard-only /tmp | satty --filename -'))
+hl.bind(mainMod .. " + z", hl.dsp.exec_cmd('hyprcap shot region -WFNcrz - | satty --filename -'))
+
+hl.bind(mainMod .. " + SHIFT + z", hl.dsp.exec_cmd('hyprcap shot monitor:active -WFNcr - | satty --filename -'))
