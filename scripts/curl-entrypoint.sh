@@ -30,16 +30,17 @@ echo ""
 
 if [ $response == 1 ]; then
 	echo "Cloning into ~/.dots using the HTTPS protocol"
-	git clone https://github.com/Tranquil-M/dots ~/.dots
+	git clone --recursive https://github.com/Tranquil-M/dots ~/.dots
 elif [ $response == 2 ]; then
 	echo "Cloning into ~/.dots using the SSH protocol"
-	git clone git@github.com:Tranquil-M/dots ~/.dots
+	git clone --recursive git@github.com:Tranquil-M/dots ~/.dots
 else
 	echo "Invalid index, closing..."
 	exit 1
 fi
 
 cd ~/.dots
+git submodule update --init --remote
 
 echo "Starting install script"
 sh install.sh
