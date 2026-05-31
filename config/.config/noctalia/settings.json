@@ -363,6 +363,17 @@
                         "visualizerType": "linear",
                         "x": 320,
                         "y": 940
+                    },
+                    {
+                        "defaultSettings": {
+                            "roundedCorners": true,
+                            "showBackground": true
+                        },
+                        "id": "plugin:calendar-widget",
+                        "scale": 1.0566037735849056,
+                        "showBackground": true,
+                        "x": 20,
+                        "y": 620
                     }
                 ]
             }
