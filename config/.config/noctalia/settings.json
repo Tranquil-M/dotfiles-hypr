@@ -202,37 +202,6 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
-                },
-                {
-                    "defaultSettings": {
-                        "aurCmd": "paru -Qua 2>/dev/null",
-                        "aurHomepageCmd": "LC_ALL=C paru -Si {id} 2>/dev/null | awk '/^URL/ {print $3}'",
-                        "boldText": true,
-                        "boldVer": true,
-                        "boldVerDesktop": true,
-                        "boldVerPanel": true,
-                        "closeButton": true,
-                        "closeOnSettings": false,
-                        "customIconPath": "",
-                        "desktopTip": true,
-                        "enableColorization": false,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "hoverTip": true,
-                        "iconColor": "none",
-                        "iconName": "arrow-big-down-lines",
-                        "noctalia": true,
-                        "panelContext": true,
-                        "panelTooltip": true,
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "systemCmd": "checkupdates 2>/dev/null",
-                        "toast": true,
-                        "tooltip": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
-                        "useDistroLogo": false
-                    },
-                    "id": "plugin:arch-updater"
                 }
             ]
         }
@@ -359,17 +328,6 @@
                         "visualizerType": "linear",
                         "x": 320,
                         "y": 1140
-                    },
-                    {
-                        "defaultSettings": {
-                            "roundedCorners": true,
-                            "showBackground": true
-                        },
-                        "id": "plugin:calendar-widget",
-                        "scale": 1.2830188679245282,
-                        "showBackground": true,
-                        "x": 20,
-                        "y": 740
                     }
                 ]
             },
@@ -396,17 +354,6 @@
                         "visualizerType": "linear",
                         "x": 320,
                         "y": 940
-                    },
-                    {
-                        "defaultSettings": {
-                            "roundedCorners": true,
-                            "showBackground": true
-                        },
-                        "id": "plugin:calendar-widget",
-                        "scale": 1.2830188679245282,
-                        "showBackground": true,
-                        "x": 20,
-                        "y": 540
                     }
                 ]
             }
