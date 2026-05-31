@@ -65,10 +65,6 @@ sh "$INSTALLERS/create_symlinks.sh"
 
 sh "$INSTALLERS/install_firefox_theme.sh"
 
-info "Running Post Install Scripts"
-sh "$HOME/.config/hypr/conf.d/scripts/create_workspaces.sh"
-success "Finished!"
-
 info "Would you like to reboot your computer?"
 substep "This may be required for some features to be properly set."
 echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}1 ${C_DIM}❯ ${C_RESET}Yes please!"
