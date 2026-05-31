@@ -86,6 +86,7 @@ Operation = Install
 Operation = Upgrade
 Type = Package
 Target = discord
+Target = equicord-installer-bin
 
 [Action]
 Description = Patching discord...
