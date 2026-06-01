@@ -233,12 +233,6 @@
                         "useDistroLogo": false
                     },
                     "id": "plugin:arch-updater"
-                },
-                {
-                    "defaultSettings": {
-                        "hideInactive": true
-                    },
-                    "id": "plugin:wf-recorder-indicator"
                 }
             ]
         }

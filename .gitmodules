@@ -1,4 +1,0 @@
-[submodule "config/.config/noctalia/plugins/wf-recorder-indicator"]
-	path = config/.config/noctalia/plugins/wf-recorder-indicator
-	url = https://github.com/Tranquil-M/wf-recorder-indicator
-	branch = main
