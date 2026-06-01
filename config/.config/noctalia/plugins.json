@@ -8,10 +8,14 @@
         {
             "enabled": true,
             "name": "Tranquil's Plugins",
-            "url": "https://github.com/Tranquil-M/wf-recorder-indicator"
+            "url": "https://github.com/Tranquil-M/noctalia-plugins"
         }
     ],
     "states": {
+        "6b47f4:wf-recorder-indicator": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/Tranquil-M/noctalia-plugins"
+        },
         "arch-updater": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
