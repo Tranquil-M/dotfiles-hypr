@@ -1,5 +1,4 @@
 hl.on("hyprland.start", function () 
-	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 	hl.exec_cmd("easyeffects --gapplication-service")
 	hl.exec_cmd("qs -c noctalia-shell")
 	hl.exec_cmd("hyprpm reload -n")

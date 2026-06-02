@@ -25,7 +25,6 @@ glm
 grim
 hyprland
 hyprpicker
-hyprpolkitagent
 hyprcap
 hyprpicker
 imagemagick
