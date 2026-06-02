@@ -90,6 +90,7 @@ ttf-liberation
 ttf-meslo-nerd
 ttf-sourcecodepro-nerd
 ttf-symbola
+tesseract
 tlp
 udisks2
 unzip
