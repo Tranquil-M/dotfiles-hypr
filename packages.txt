@@ -21,6 +21,7 @@ flatpak
 fwupd
 fzf
 git
+gifski
 glm
 grim
 hyprland
@@ -90,6 +91,7 @@ ttf-liberation
 ttf-meslo-nerd
 ttf-sourcecodepro-nerd
 ttf-symbola
+translate-shell
 tesseract
 tlp
 udisks2
