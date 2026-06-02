@@ -13,9 +13,6 @@ require("modules.keybind_modules.applications")
 -- Screenshots
 require("modules.keybind_modules.screenshots")
 
--- Recordings
-require("modules.keybind_modules.recording")
-
 -- Window management
 require("modules.keybind_modules.window_management")
 
