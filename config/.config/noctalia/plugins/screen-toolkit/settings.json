@@ -1,12 +1,13 @@
 {
   "colorHistory": [
+    "#151109",
     "#4C566A"
   ],
   "paletteColors": "",
   "installedLangs": [
     "afr"
   ],
-  "transAvailable": false,
+  "transAvailable": true,
   "selectedOcrLang": "eng",
   "screenshotPath": "",
   "videoPath": "",
@@ -27,3 +28,4 @@
   "qrCapturePath": "",
   "translateResult": ""
 }
+
