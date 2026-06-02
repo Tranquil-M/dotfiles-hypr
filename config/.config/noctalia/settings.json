@@ -235,6 +235,9 @@
                     "id": "plugin:arch-updater"
                 },
                 {
+                    "defaultSettings": {
+                        "hideInactive": true
+                    },
                     "id": "plugin:6b47f4:wf-recorder-indicator"
                 }
             ]
@@ -569,7 +572,7 @@
         "disableWallpaper": false
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.9,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
         "density": "default",
@@ -578,7 +581,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top_right",
+        "location": "bottom",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
