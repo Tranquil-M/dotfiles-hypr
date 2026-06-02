@@ -60,7 +60,7 @@ Welcome to...
 **Dotfiles installer**
 1. Verifies dependencies, operation system, and internet connection.
 2. Installs all the neccessary packages from `packages.txt` in the project root.
-3. Asks the user if they want to install am SDDM theme. This will clone [Darkkal44's qylock](https://github.com/Darkkal44/qylock) and run the corresponding installation script.
+3. Asks the user if they want to install am SDDM theme. This will clone [`Darkkal44's qylock`](https://github.com/Darkkal44/qylock) and run the corresponding installation script.
 5. Sets default file manager, browser, etc.
 6. Overwrites the current configuration in place with the new one, all synced with GNU stow.
 7. Runs post-installation script such as persistent workspace creation.
@@ -167,20 +167,20 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 
 ## Packages
 
-* [Btop](https://github.com/aristocratos/btop)
-* [GNU Stow](https://www.gnu.org/software/stow/)
-* [Equibop](https://equicord.org/)
-* [Exa](https://github.com/ogham/exa)
-* [Grim](https://github.com/emersion/grim)
-* [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
-* [Kitty](https://sw.kovidgoyal.net/kitty/)
-* [Little Fox](https://github.com/biglavis/LittleFox)
-* [Matugen Templates](https://github.com/InioX/matugen-themes)
-* [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-* [Satty](https://github.com/Satty-org/Satty)
-* [Qylock](https://github.com/Darkkal44/qylock)
-* [Slurp](https://github.com/emersion/slurp)
-* [Zoxide](https://github.com/ajeetdsouza/zoxide)
-* [Noctalia](https://noctalia.dev/)
+* [`Btop`](https://github.com/aristocratos/btop)
+* [`GNU Stow`](https://www.gnu.org/software/stow/)
+* [`Equibop`](https://equicord.org/)
+* [`Exa`](https://github.com/ogham/exa)
+* [`Grim`](https://github.com/emersion/grim)
+* [`Kickstart`](https://github.com/nvim-lua/kickstart.nvim)
+* [`Kitty`](https://sw.kovidgoyal.net/kitty/)
+* [`Little Fox`](https://github.com/biglavis/LittleFox)
+* [`Matugen Templates`](https://github.com/InioX/matugen-themes)
+* [`Pywal-Fox`](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+* [`Satty`](https://github.com/Satty-org/Satty)
+* [`Qylock`](https://github.com/Darkkal44/qylock)
+* [`Slurp`](https://github.com/emersion/slurp)
+* [`Zoxide`](https://github.com/ajeetdsouza/zoxide)
+* [`Noctalia`](https://noctalia.dev/)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I61Z3QJH)
