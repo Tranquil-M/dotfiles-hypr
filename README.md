@@ -183,5 +183,4 @@ These dotfiles are meant to be simple and practical for daily use, with some add
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
 * [Noctalia](https://noctalia.dev/)
 
----
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I61Z3QJH)
