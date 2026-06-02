@@ -4,11 +4,11 @@
   "animate_window": true,
   "background_color": "#000000",
   "background_opacity": 0,
-  "card_height": 300,
+  "card_height": 230,
   "card_spacing": 0,
-  "card_strip_width": 110,
+  "card_strip_width": 20,
   "cards_shown": 5,
-  "center_width_ratio": 0.30000000000000004,
+  "center_width_ratio": 0.2,
   "image_filter": [
     "png",
     "jpg",
@@ -23,6 +23,6 @@
   "live_preview": false,
   "selected_filter": "all",
   "shear_factor": 0,
-  "top_bar_height": 50,
+  "top_bar_height": 10,
   "iconColor": "none"
 }
