@@ -195,6 +195,12 @@
                     "textColor": "none"
                 },
                 {
+                    "id": "plugin:screen-toolkit"
+                },
+                {
+                    "id": "plugin:protonvpn"
+                },
+                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "h:mm AP",
@@ -233,12 +239,6 @@
                         "useDistroLogo": false
                     },
                     "id": "plugin:arch-updater"
-                },
-                {
-                    "defaultSettings": {
-                        "hideInactive": true
-                    },
-                    "id": "plugin:6b47f4:wf-recorder-indicator"
                 }
             ]
         }
@@ -398,10 +398,10 @@
                             "showBackground": true
                         },
                         "id": "plugin:calendar-widget",
-                        "scale": 1.0566037735849056,
+                        "scale": 1.3584905660377358,
                         "showBackground": true,
                         "x": 20,
-                        "y": 620
+                        "y": 520
                     }
                 ]
             }
@@ -581,7 +581,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "bottom",
+        "location": "top",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
