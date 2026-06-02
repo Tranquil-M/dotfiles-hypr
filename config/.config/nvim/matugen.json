@@ -10,8 +10,8 @@
   "outline_variant": "#474747",
   "on_surface": "#e2e2e2",
   "on_surface_variant": "#c6c6c6",
-  "primary": "#aac7ff",
-  "secondary": "#bec6dc",
-  "tertiary": "#dcbce0",
+  "primary": "#c7bfff",
+  "secondary": "#c8c3dc",
+  "tertiary": "#ecb8cf",
   "error": "#ffb4ab"
 }

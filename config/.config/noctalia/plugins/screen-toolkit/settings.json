@@ -4,7 +4,7 @@
   ],
   "paletteColors": "",
   "installedLangs": [
-    "eng"
+    "afr"
   ],
   "transAvailable": false,
   "selectedOcrLang": "eng",
@@ -15,12 +15,12 @@
   "recordSkipConfirmation": false,
   "recordCopyToClipboard": false,
   "gifMaxSeconds": 30,
-  "resultHex": "#4C566A",
-  "resultRgb": "rgb(76, 86, 106)",
-  "resultHsv": "hsv(220, 28%, 42%)",
-  "resultHsl": "hsl(220, 16%, 36%)",
-  "colorCapturePath": "/tmp/screen-toolkit-colorpicker.png",
-  "colorCacheBust": 1780362265196,
+  "resultHex": "",
+  "resultRgb": "",
+  "resultHsv": "",
+  "resultHsl": "",
+  "colorCapturePath": "",
+  "colorCacheBust": 0,
   "ocrResult": "",
   "ocrCapturePath": "",
   "qrResult": "",
