@@ -195,6 +195,9 @@
                     "textColor": "none"
                 },
                 {
+                    "id": "plugin:wallcards"
+                },
+                {
                     "id": "plugin:screen-toolkit"
                 },
                 {
@@ -581,7 +584,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top",
+        "location": "top_left",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],

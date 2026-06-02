@@ -40,6 +40,7 @@ lsp-plugins
 markdownlint-cli
 meson
 mpv
+mpvpaper
 nautilus
 neovim
 networkmanager
