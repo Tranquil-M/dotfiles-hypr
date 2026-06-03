@@ -1,5 +1,6 @@
 {
   "colorHistory": [
+    "#141415",
     "#151109",
     "#4C566A"
   ],
@@ -8,24 +9,27 @@
     "afr"
   ],
   "transAvailable": true,
-  "selectedOcrLang": "eng",
+  "selectedOcrLang": "afr",
   "screenshotPath": "",
   "videoPath": "",
   "filenameFormat": "",
   "detectedRecorder": "wf-recorder",
-  "recordSkipConfirmation": false,
-  "recordCopyToClipboard": false,
+  "recordSkipConfirmation": true,
+  "recordCopyToClipboard": true,
   "gifMaxSeconds": 30,
-  "resultHex": "",
-  "resultRgb": "",
-  "resultHsv": "",
-  "resultHsl": "",
-  "colorCapturePath": "",
-  "colorCacheBust": 0,
+  "resultHex": "#141415",
+  "resultRgb": "rgb(20, 20, 21)",
+  "resultHsv": "hsv(240, 5%, 8%)",
+  "resultHsl": "hsl(240, 2%, 8%)",
+  "colorCapturePath": "/tmp/screen-toolkit-colorpicker.png",
+  "colorCacheBust": 1780517844368,
   "ocrResult": "",
   "ocrCapturePath": "",
   "qrResult": "",
   "qrCapturePath": "",
-  "translateResult": ""
+  "translateResult": "",
+  "x02ApiKey": "",
+  "x02Expiry": "7d",
+  "shareSkipPopover": false,
+  "searchEngineUrl": ""
 }
-
