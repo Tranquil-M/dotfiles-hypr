@@ -78,6 +78,19 @@
         "widgetSpacing": 5,
         "widgets": {
             "center": [
+                {
+                    "defaultSettings": {
+                        "catColor": "default",
+                        "catOffsetY": 0,
+                        "catSize": 1,
+                        "idleTimeout": 150,
+                        "raveMode": false,
+                        "tappyMode": false,
+                        "useMprisFilter": false,
+                        "waitingTimeout": 30000
+                    },
+                    "id": "plugin:slowbongo"
+                }
             ],
             "left": [
                 {
@@ -242,6 +255,15 @@
                     "iconColor": "primary",
                     "id": "Network",
                     "textColor": "none"
+                },
+                {
+                    "defaultSettings": {
+                        "connectedColor": "primary",
+                        "disconnectedColor": "none",
+                        "displayMode": "alwaysShow",
+                        "pollInterval": 5000
+                    },
+                    "id": "plugin:protonvpn"
                 },
                 {
                     "displayMode": "onhover",

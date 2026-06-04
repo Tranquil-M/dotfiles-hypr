@@ -15,6 +15,7 @@ dosfstools
 easyeffects
 efibootmgr
 equicord-installer-bin
+evtest
 eza
 firefox
 flatpak
