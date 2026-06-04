@@ -121,7 +121,7 @@
                     "emptyColor": "secondary",
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
-                    "followFocusedScreen": true,
+                    "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 0.33,
                     "hideUnoccupied": false,
