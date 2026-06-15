@@ -1,7 +1,7 @@
 {
   "idleTimeout": 150,
   "waitingTimeout": 30000,
-  "catColor": "default",
+  "catColor": "none",
   "catSize": 0.85,
   "catOffsetY": 0.10999999999999999,
   "raveMode": false,

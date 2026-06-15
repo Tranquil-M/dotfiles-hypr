@@ -222,15 +222,6 @@
                     "textColor": "none"
                 },
                 {
-                    "defaultSettings": {
-                        "connectedColor": "primary",
-                        "disconnectedColor": "none",
-                        "displayMode": "alwaysShow",
-                        "pollInterval": 5000
-                    },
-                    "id": "plugin:protonvpn"
-                },
-                {
                     "displayMode": "onhover",
                     "iconColor": "primary",
                     "id": "Bluetooth",
@@ -322,7 +313,7 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "WallpaperSelector"
+                    "id": "DarkMode"
                 },
                 {
                     "id": "NoctaliaPerformance"
@@ -426,8 +417,8 @@
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "digital",
-        "compactLockScreen": false,
-        "dimmerOpacity": 0.2,
+        "compactLockScreen": true,
+        "dimmerOpacity": 0.3,
         "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
@@ -556,7 +547,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top_right",
+        "location": "top",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
@@ -602,7 +593,7 @@
         "enableCountdown": true,
         "largeButtonsLayout": "single-row",
         "largeButtonsStyle": false,
-        "position": "bottom_right",
+        "position": "top_right",
         "powerOptions": [
             {
                 "action": "lock",
@@ -770,7 +761,7 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
+        "useWallhaven": false,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
