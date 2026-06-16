@@ -6,7 +6,7 @@ export PACMAN_AUTH="pkexec"
 # temp log file
 log=/tmp/update.log
 
-notify-send "System Updating..." "Writing log to $log"
+notify-send "System Updating..." "You may be prompted multiple times to enter your sudo password."
 
 # check if command executes without error, and write to log
 if { yay -Syyu --noconfirm && flatpak update -y; } >"$log" 2>&1; then

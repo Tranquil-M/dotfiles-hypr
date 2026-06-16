@@ -14,7 +14,7 @@
         "enableSessionSearch": false,
         "enableSettingsSearch": false,
         "enableWindowsSearch": false,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": true,
         "overviewLayer": true,
         "pinnedApps": [
@@ -166,7 +166,7 @@
                 {
                     "blacklist": [
                     ],
-                    "chevronColor": "primary",
+                    "chevronColor": "none",
                     "colorizeIcons": true,
                     "drawerEnabled": true,
                     "hidePassive": false,
@@ -547,7 +547,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top",
+        "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
