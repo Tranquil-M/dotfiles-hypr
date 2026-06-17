@@ -21,6 +21,7 @@ firefox
 flatpak
 fwupd
 fzf
+gamescope
 git
 gifski
 glm
