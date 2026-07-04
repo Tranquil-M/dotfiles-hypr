@@ -43,7 +43,7 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "floating",
+        "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 0,
@@ -64,7 +64,7 @@
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
         "outerCorners": true,
-        "position": "top",
+        "position": "bottom",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -78,52 +78,8 @@
         "widgetSpacing": 5,
         "widgets": {
             "center": [
-                {
-                    "defaultSettings": {
-                        "catColor": "default",
-                        "catOffsetY": 0,
-                        "catSize": 1,
-                        "idleTimeout": 150,
-                        "raveMode": false,
-                        "tappyMode": false,
-                        "useMprisFilter": false,
-                        "waitingTimeout": 30000
-                    },
-                    "id": "plugin:slowbongo"
-                }
             ],
             "left": [
-                {
-                    "defaultSettings": {
-                        "aurCmd": "paru -Qua 2>/dev/null",
-                        "aurHomepageCmd": "LC_ALL=C paru -Si {id} 2>/dev/null | awk '/^URL/ {print $3}'",
-                        "boldText": true,
-                        "boldVer": true,
-                        "boldVerDesktop": true,
-                        "boldVerPanel": true,
-                        "closeButton": true,
-                        "closeOnSettings": false,
-                        "customIconPath": "",
-                        "desktopTip": true,
-                        "enableColorization": false,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "hoverTip": true,
-                        "iconColor": "none",
-                        "iconName": "arrow-big-down-lines",
-                        "noctalia": true,
-                        "panelContext": true,
-                        "panelTooltip": true,
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "systemCmd": "checkupdates 2>/dev/null",
-                        "toast": true,
-                        "tooltip": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
-                        "useDistroLogo": false
-                    },
-                    "id": "plugin:arch-updater"
-                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -173,15 +129,6 @@
                     "id": "Tray",
                     "pinned": [
                     ]
-                },
-                {
-                    "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "h:mm a",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
                 },
                 {
                     "defaultSettings": {
@@ -244,8 +191,13 @@
                     "textColor": "none"
                 },
                 {
-                    "iconColor": "error",
-                    "id": "SessionMenu"
+                    "clockColor": "none",
+                    "customFont": "",
+                    "formatHorizontal": "h:mm a",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "useCustomFont": false
                 }
             ]
         }
@@ -345,7 +297,7 @@
         }
     },
     "desktopWidgets": {
-        "enabled": false,
+        "enabled": true,
         "gridSnap": true,
         "gridSnapScale": true,
         "monitorWidgets": [
@@ -358,25 +310,58 @@
                 "name": "DP-1",
                 "widgets": [
                     {
-                        "id": "Weather",
+                        "diskPath": "/",
+                        "id": "SystemStat",
+                        "layout": "bottom",
                         "roundedCorners": true,
                         "scale": 1,
                         "showBackground": true,
-                        "x": 20,
-                        "y": 940
+                        "statType": "CPU",
+                        "x": 1660,
+                        "y": 900
                     },
                     {
-                        "hideMode": "visible",
-                        "id": "MediaPlayer",
-                        "roundedCorners": true,
-                        "scale": 1,
-                        "showAlbumArt": true,
+                        "defaultSettings": {
+                            "aurCmd": "paru -Qua 2>/dev/null",
+                            "aurHomepageCmd": "LC_ALL=C paru -Si {id} 2>/dev/null | awk '/^URL/ {print $3}'",
+                            "boldText": true,
+                            "boldVer": true,
+                            "boldVerDesktop": true,
+                            "boldVerPanel": true,
+                            "closeButton": true,
+                            "closeOnSettings": false,
+                            "customIconPath": "",
+                            "desktopTip": true,
+                            "enableColorization": false,
+                            "flatpak": true,
+                            "hideOnEmpty": false,
+                            "hoverTip": true,
+                            "iconColor": "none",
+                            "iconName": "arrow-big-down-lines",
+                            "noctalia": true,
+                            "panelContext": true,
+                            "panelTooltip": true,
+                            "refreshInterval": 120,
+                            "refreshTimer": true,
+                            "systemCmd": "checkupdates 2>/dev/null",
+                            "toast": true,
+                            "tooltip": true,
+                            "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
+                            "useDistroLogo": false
+                        },
+                        "id": "plugin:arch-updater",
+                        "scale": 1.1156048314422833,
                         "showBackground": true,
-                        "showButtons": true,
-                        "showVisualizer": true,
-                        "visualizerType": "linear",
-                        "x": 320,
-                        "y": 940
+                        "x": 20,
+                        "y": 820
+                    },
+                    {
+                        "id": "Weather",
+                        "roundedCorners": true,
+                        "scale": 0.8700709089814147,
+                        "showBackground": true,
+                        "x": 1419,
+                        "y": 948
                     }
                 ]
             }
