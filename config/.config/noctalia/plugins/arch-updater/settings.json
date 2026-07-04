@@ -23,6 +23,6 @@
   "panelTooltip": true,
   "panelContext": true,
   "boldVerPanel": true,
-  "boldVerDesktop": true,
+  "boldVerDesktop": false,
   "hoverTip": true
 }

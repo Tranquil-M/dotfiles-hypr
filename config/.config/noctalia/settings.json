@@ -310,17 +310,6 @@
                 "name": "DP-1",
                 "widgets": [
                     {
-                        "diskPath": "/",
-                        "id": "SystemStat",
-                        "layout": "bottom",
-                        "roundedCorners": true,
-                        "scale": 1,
-                        "showBackground": true,
-                        "statType": "CPU",
-                        "x": 1660,
-                        "y": 900
-                    },
-                    {
                         "defaultSettings": {
                             "aurCmd": "paru -Qua 2>/dev/null",
                             "aurHomepageCmd": "LC_ALL=C paru -Si {id} 2>/dev/null | awk '/^URL/ {print $3}'",
@@ -352,7 +341,7 @@
                         "id": "plugin:arch-updater",
                         "scale": 1.1156048314422833,
                         "showBackground": true,
-                        "x": 20,
+                        "x": 1540,
                         "y": 820
                     },
                     {
@@ -360,8 +349,8 @@
                         "roundedCorners": true,
                         "scale": 0.8700709089814147,
                         "showBackground": true,
-                        "x": 1419,
-                        "y": 948
+                        "x": 1680,
+                        "y": 720
                     }
                 ]
             }
