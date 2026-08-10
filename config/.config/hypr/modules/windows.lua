@@ -67,3 +67,17 @@ hl.window_rule({
     match = { class = "^(discord)$" },
     render_unfocused = true
 })
+
+hl.window_rule({
+  match = {
+    title = "^(Picture-in-Picture|Picture in picture|Picture-In-Picture)$",
+  },
+
+  float = true,
+  pin = true,
+
+  size = { "15%", "15%" },
+  move = { "(monitor_w - window_w - 20)", "(monitor_h - window_h - (monitor_h * 0.05))" },
+
+  animation = "slide right",
+})
