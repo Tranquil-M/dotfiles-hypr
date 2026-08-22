@@ -10,3 +10,6 @@ require("modules.input")
 require("modules.workspaces")
 require("modules.windows")
 require("monitors")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

@@ -1,25 +1,14 @@
-[config]
-
-[templates.equicord]
-input_path = '~/.config/noctalia/templates/midnight-discord.css'
-output_path = '~/.config/Equicord/themes/OS-Theme.css'
-
-[templates.btop]
+[theme.templates.user.btop]
 input_path = '~/.config/noctalia/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 post_hook = 'pkill -SIGUSR2 btop || true'
 
-[templates.nvim]
+[theme.templates.user.nvim]
 input_path = '~/.config/noctalia/templates/nvim.json'
 output_path = '~/.config/nvim/matugen.json'
 post_hook = 'pkill -SIGUSR1 nvim'
 
-[templates.websites-config]
-input_path = "~/.config/noctalia/templates/firefox-colors.css"
-output_path = "~/.config/mozilla/firefox/colors.css"
-
-[templates.websites-mozilla]
-pre_hook = "pkill nautilus"
+[theme.templates.user.websites-mozilla]
 input_path = "~/.config/noctalia/templates/firefox-colors.css"
 output_path = "~/.mozilla/firefox/colors.css"
 post_hook = 'sh ~/.config/noctalia/scripts/install_website_colors.sh'

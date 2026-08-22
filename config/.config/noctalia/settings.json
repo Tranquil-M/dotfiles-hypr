@@ -81,6 +81,10 @@
             ],
             "left": [
                 {
+                    "iconColor": "error",
+                    "id": "SessionMenu"
+                },
+                {
                     "characterCount": 2,
                     "colorizeIcons": false,
                     "emptyColor": "secondary",
