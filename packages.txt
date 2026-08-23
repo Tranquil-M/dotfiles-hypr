@@ -51,7 +51,7 @@ fastfetch
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
-noctalia-shell
+noctalia
 cliphist
 wlsunset
 nwg-displays
