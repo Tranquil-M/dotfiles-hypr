@@ -3,43 +3,46 @@ enable_overdrive = true
 enable_sounds = true
 notification_sound = "/home/beepew/.config/noctalia/notification.mp3"
 
-[bar.default]
-capsule = true
-capsule_radius = 8
-capsule_thickness = 0.69999998807907104
-center = [ "taskbar" ]
-end = [ "group:g2", "group:g1" ]
-margin_ends = 250
-padding = 10
-radius = 10
-radius_top_left = 15
-radius_top_right = 15
-scale = 0.95000000670552254
-start = [ "workspaces", "media" ]
-thickness = 28
-widget_spacing = 10
+[bar]
+order = [ "default" ]
 
-    [[bar.default.capsule_group]]
-    accordion = false
-    accordion_direction = "end"
-    enabled = true
-    fill = "surface_variant"
-    id = "g1"
-    members = [ "volume", "brightness", "bluetooth", "network", "battery", "clock" ]
-    opacity = 1.0
-    padding = 6.0
-    radius = 8.0
+    [bar.default]
+    capsule = true
+    capsule_radius = 8
+    capsule_thickness = 0.69999998807907104
+    center = [ "taskbar" ]
+    end = [ "group:g2", "group:g1" ]
+    margin_ends = 250
+    padding = 10
+    radius = 10
+    radius_top_left = 15
+    radius_top_right = 15
+    scale = 0.95000000670552254
+    start = [ "workspaces", "media" ]
+    thickness = 30
+    widget_spacing = 10
 
-    [[bar.default.capsule_group]]
-    accordion = false
-    accordion_direction = "end"
-    enabled = true
-    fill = "surface_variant"
-    id = "g2"
-    members = [ "tray", "widget", "notifications" ]
-    opacity = 1.0
-    padding = 6.0
-    radius = 8.0
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "volume", "brightness", "bluetooth", "network", "battery", "clock" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "tray", "widget", "notifications" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 8.0
 
 [control_center]
 sidebar = "full"
@@ -101,6 +104,13 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     placement_width = 1920.0
     rotation = 0.0
     type = "weather"
+
+[dock]
+active_monitor_only = true
+cross_axis_padding = 2
+icon_size = 24
+item_spacing = 0
+main_axis_padding = 2
 
 [idle]
 behavior_order = [ "Sleep Warning", "lock", "screen-off", "lock-and-suspend" ]
