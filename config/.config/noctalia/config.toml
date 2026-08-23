@@ -44,8 +44,16 @@ order = [ "default" ]
         padding = 6.0
         radius = 8.0
 
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    name = "Personal Calendar"
+    type = "google"
+
 [control_center]
 sidebar = "full"
+sidebar_section = "full"
 width = 870
 
     [[control_center.shortcuts]]
@@ -64,6 +72,7 @@ width = 870
     type = "power_profile"
 
 [desktop_widgets]
+enabled = false
 schema_version = 2
 widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
 
@@ -278,7 +287,7 @@ position = "bottom_center"
 position_vertical = "center_right"
 
 [plugins]
-enabled = [ "thepunkoff/pomodoro", "alexander/screen-toolkit", "piero-93/battery-power-management" ]
+enabled = [ "thepunkoff/pomodoro", "alexander/screen-toolkit" ]
 
     [[plugins.source]]
     kind = "git"
@@ -359,8 +368,11 @@ time_format = "{:%I:%M}"
         variant = "primary"
 
 [theme]
+community_palette = "Oxocarbon"
+mode = "dark"
 pure_black_dark = true
 source = "wallpaper"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "hyprland", "kitty", "qt" ]
@@ -385,16 +397,16 @@ source = "wallpaper"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
 
     [wallpaper.last]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
 
 [widget.clock]
 format = "{:%I:%M}"
