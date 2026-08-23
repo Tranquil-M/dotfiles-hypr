@@ -9,15 +9,14 @@ capsule_radius = 8
 capsule_thickness = 0.69999998807907104
 center = [ "taskbar" ]
 end = [ "group:g2", "group:g1" ]
-margin_ends = 0
-padding = 5
-position = "bottom"
-radius = 0
+margin_ends = 250
+padding = 10
+radius = 10
 radius_top_left = 15
 radius_top_right = 15
 scale = 0.95000000670552254
 start = [ "workspaces", "media" ]
-thickness = 40
+thickness = 28
 widget_spacing = 10
 
     [[bar.default.capsule_group]]
@@ -45,6 +44,21 @@ widget_spacing = 10
 [control_center]
 sidebar = "full"
 width = 870
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
 
 [desktop_widgets]
 schema_version = 2
@@ -250,7 +264,7 @@ offset_y = 10
 
 [osd]
 orientation = "vertical"
-position = "center_right"
+position = "bottom_center"
 position_vertical = "center_right"
 
 [plugins]
@@ -371,6 +385,9 @@ transition_on_startup = true
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+
+[widget.clock]
+format = "{:%I:%M}"
 
 [widget.network]
 show_label = false
