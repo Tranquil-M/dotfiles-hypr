@@ -18,7 +18,7 @@ order = [ "default" ]
     radius_top_left = 15
     radius_top_right = 15
     scale = 0.95000000670552254
-    start = [ "workspaces", "media" ]
+    start = [ "workspaces" ]
     thickness = 30
     widget_spacing = 10
 
@@ -364,7 +364,7 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "hyprland", "kitty", "qt" ]
-    community_ids = [ "pywalfox", "discord" ]
+    community_ids = [ "pywalfox", "discord", "obsidian" ]
 
         [theme.templates.user.btop]
         input_path = "~/.config/noctalia/templates/btop.theme"
