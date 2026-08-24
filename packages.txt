@@ -25,6 +25,7 @@ gamescope
 git
 gifski
 glm
+greetd
 grim
 hyprland
 hyprpicker
@@ -52,6 +53,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 noctalia
+noctalia-greeter-compositor
 cliphist
 wlsunset
 nwg-displays
@@ -75,7 +77,6 @@ gst-plugins-good
 gst-plugins-bad
 gst-plugins-ugly
 satty
-sddm
 stow
 steam
 slurp

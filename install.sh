@@ -44,20 +44,7 @@ success "Internet connection found!"
 
 sh "$INSTALLERS/install_packages.sh"
 
-info "Would you like to install an SDDM theme?"
-substep "This will clone the \"qylock\" repository written by ${C_YELLOW}Darkkal44${C_RESET} on github."
-substep "Make sure that you have a stable connection to wifi during this installation!"
-echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}1 ${C_DIM}❯ ${C_RESET}I would love an sddm theme!"
-echo -e "${C_MAIN}${C_BOLD} │  ${C_ACCENT}2 ${C_DIM}❯ ${C_RESET}No thanks, move on."
-echo -ne "${C_MAIN}${C_BOLD} ╰─ ${C_YELLOW}Choice [1/2]: ${C_RESET}"
-read -rp "" SDDM
-
-if [ "$SDDM" == "1" ]; then
-    echo ""
-    sh "$INSTALLERS/install_sddm_themes.sh"
-else
-    echo "ok"
-fi
+sh "$INSTALLERS/install_greetd_theme.sh"
 
 sh "$INSTALLERS/set_defaults.sh"
 
