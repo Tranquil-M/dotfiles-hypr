@@ -53,7 +53,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 noctalia
-noctalia-greeter-compositor
+noctalia-greeter
 cliphist
 wlsunset
 nwg-displays

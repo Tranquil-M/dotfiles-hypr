@@ -286,8 +286,11 @@ orientation = "vertical"
 position = "bottom_center"
 position_vertical = "center_right"
 
+[plugin_settings."whyoolw/dropwall"]
+copy_to_wallpaper_dir = true
+
 [plugins]
-enabled = [ "thepunkoff/pomodoro", "alexander/screen-toolkit" ]
+enabled = [ "thepunkoff/pomodoro", "alexander/screen-toolkit", "whyoolw/dropwall" ]
 
     [[plugins.source]]
     kind = "git"
@@ -368,6 +371,7 @@ time_format = "{:%I:%M}"
         variant = "primary"
 
 [theme]
+builtin = "Noctalia"
 community_palette = "Oxocarbon"
 mode = "dark"
 pure_black_dark = true
@@ -397,16 +401,34 @@ wallpaper_scheme = "m3-content"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Ruined Architecture.jpg"
 
     [wallpaper.last]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Ruined Architecture.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Ruined Architecture.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
+    path = "/home/beepew/Pictures/Wallpapers/Ruined Architecture.jpg"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/beepew/Pictures/Wallpapers/fleaaa.webp"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
     path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/beepew/Pictures/Wallpapers/Whirl Of Clouds.png"
+    theme_mode = "auto"
 
 [widget.clock]
 format = "{:%I:%M}"
