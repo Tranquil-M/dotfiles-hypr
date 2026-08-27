@@ -400,16 +400,16 @@ wallpaper_scheme = "m3-content"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
 
     [wallpaper.last]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
+    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
