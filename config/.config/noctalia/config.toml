@@ -121,6 +121,9 @@ icon_size = 24
 item_spacing = 0
 main_axis_padding = 2
 
+[hooks]
+started = "notify-send \"You have $(pacman -Qu | wc -l) package updates waiting for you!\""
+
 [idle]
 behavior_order = [ "Sleep Warning", "lock", "screen-off", "lock-and-suspend" ]
 pre_action_fade_seconds = 5
@@ -371,8 +374,9 @@ time_format = "{:%I:%M}"
         variant = "primary"
 
 [theme]
-builtin = "Noctalia"
+builtin = "Ayu"
 community_palette = "Oxocarbon"
+mode = "dark"
 pure_black_dark = true
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
@@ -400,24 +404,26 @@ wallpaper_scheme = "m3-content"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Whirl Of Clouds.png"
 
     [wallpaper.last]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Whirl Of Clouds.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Whirl Of Clouds.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/beepew/Pictures/Wallpapers/Heavy Clouds.jpg"
+    path = "/home/beepew/Pictures/Wallpapers/Whirl Of Clouds.png"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
     path = "/home/beepew/Pictures/Wallpapers/fleaaa.webp"
-    theme_mode = "dark"
+    theme_mode = "auto"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
+    builtin_palette = "Ayu"
+    palette_source = "builtin"
     path = "/home/beepew/Pictures/Wallpapers/Kittyboard.png"
     theme_mode = "auto"
 
